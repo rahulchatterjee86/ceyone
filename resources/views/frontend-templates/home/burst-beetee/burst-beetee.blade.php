@@ -97,7 +97,6 @@
         <div class="carousel-outer">
             <!-- Products Carousel -->
             <div class="products-carousel owl-carousel owl-theme">
-                
                 @foreach($advancedData['features_items'] as $key => $features_product)
                 <!-- Product Block --> 
                 <div class="product-block">
@@ -314,6 +313,9 @@
             <div class="filters clearfix">
                 <ul class="filter-tabs filter-btns clearfix">
                     <li class="active filter" data-role="button" data-filter="all">All</li>
+                    @foreach($advancedData['categories'] as $key => $category)
+                    <li class="filter" data-role="button" data-filter=".{{ $category->slug }}">{{ $category->name }}</li>
+                    @endforeach
                     <li class="filter" data-role="button" data-filter=".baby-prod">Baby Products</li>
                     <li class="filter" data-role="button" data-filter=".bath-prep">Bath Preparations</li>
                     <li class="filter" data-role="button" data-filter=".eye-makeup">Eye Makeup</li>

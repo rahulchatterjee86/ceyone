@@ -2628,6 +2628,12 @@ class ProductsController extends Controller
                                ->take(8)
                                ->get()
                                ->toArray();
+                               
+      $get_categories =    DB::table('terms')
+                               ->select('terms.*')
+                               ->where('type', 'product_cat')
+                               ->get()
+                               ->toArray();
     }
 
     $get_latest_items =      DB::table('products')
@@ -2697,6 +2703,7 @@ class ProductsController extends Controller
     if(Request::is('/')){
       $advanced_arr['recommended_items']  =   $get_recommended_items;
       $advanced_arr['features_items']     =   $get_features_items;
+      $advanced_arr['categories']         =   $get_categories;
       $advanced_arr['todays_deal']        =   $todays_deal_arr;
     }
     $advanced_arr['latest_items']         =   $get_latest_items;
