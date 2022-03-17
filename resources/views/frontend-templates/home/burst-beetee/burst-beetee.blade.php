@@ -4,7 +4,7 @@
         <!-- Slide Item -->
         <div class="slide-item style-one">
             <div class="auto-container">
-                <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst_beetee/images/main-slider/1.png') }});"></div></div>
+                <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/1.png') }});"></div></div>
                 <div class="content-box">
                     <h4>Burst BeeTee Makeup Products</h4>
                     <h2><strong>We Don't</strong> Just Sell Makeup</h2>
@@ -17,7 +17,7 @@
         <!-- Slide Item -->
         <div class="slide-item style-two">
             <div class="auto-container">
-                <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst_beetee/images/main-slider/2.jpg') }});"></div></div>
+                <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/2.jpg') }});"></div></div>
                 <div class="content-box">
                     <h4>Burst BeeTee Makeup Products</h4>
                     <h2><strong>A Website</strong> Makes it real</h2>
@@ -29,7 +29,7 @@
 
         <!-- Slide Item -->
         <div class="slide-item style-three">
-            <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst_beetee/images/main-slider/3.jpg') }});"></div></div>
+            <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/3.jpg') }});"></div></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h4>Burst BeeTee Makeup Products</h4>
@@ -101,7 +101,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/1.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/1.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -121,7 +121,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/2.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/2.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -141,7 +141,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/3.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/3.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -161,7 +161,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/1.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/1.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -181,7 +181,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/2.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/2.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -201,7 +201,7 @@
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/3.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/3.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -266,7 +266,7 @@
                             </div>
 
                             <div class="image-box">
-                                <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/hot-product.png') }}" alt=""></figure>
+                                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/hot-product.png') }}" alt=""></figure>
                                 <div class="sale-tag">Sale <span>50% OFF</span></div>
                             </div>
                         </div>
@@ -282,7 +282,7 @@
 <!-- End Upcoming Product -->
 
 <!-- Call to Action -->
-<section class="call-to-action" style="background-image: url({{ URL::asset('public/burst_beetee/images/background/1.jpg') }});">
+<section class="call-to-action" style="background-image: url({{ URL::asset('public/burst-beetee/images/background/1.jpg') }});">
     <div class="auto-container">
         <div class="sec-title text-center">
             <h2>CLEAN ORGANIC AND NATURAL <br>COSMETIC PRODUCTS</h2>
@@ -316,100 +316,16 @@
             </div>
                                                                             
             <div class="filter-list row">
+                @foreach($advancedData['features_items'] as $key => $features_product)
                 <!-- Product Block --> 
-                @foreach($advancedData['features_items'] as $key => $features_product)
-                {{-- @php dump($features_product); @endphp --}}
-                        <div class="slick-items">
-                            <div class="hover-product">
-                                <div class="hover">
-                                    @if(!empty($features_product->image_url))
-                                    <a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ get_image_url( $features_product->image_url ) }}" alt="{{ basename( get_image_url( $features_product->image_url ) ) }}" /></a>
-                                    @else
-                                    <a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a>
-                                    @endif
-
-                                    <div class="overlay">
-                                        <button class="info quick-view-popup" data-id="{{ $features_product->id }}">{{ trans('frontend.quick_view_label') }}</button>
-                                    </div>
-                                </div> 
-
-                                <div class="single-product-bottom-section">
-                                    <h3><a href ="{{ route('details-page', $features_product->slug) }}">{!! $features_product->title !!}</a></h3>
-
-                                    @if( $features_product->type == 'simple_product' )
-                                    <p>{!! price_html( get_product_price_html_by_filter(get_role_based_price_by_product_id($features_product->id, $features_product->price)), $selected_currency) !!}</p>
-                                    @elseif( $features_product->type == 'configurable_product' )
-                                    <p>{!! get_product_variations_min_to_max_price_html($selected_currency, $features_product->id) !!}</p>
-                                    @elseif( $features_product->type == 'customizable_product' || $features_product->type == 'downloadable_product')
-                                    @if(count(get_product_variations($features_product->id))>0)
-                                    <p>{!! get_product_variations_min_to_max_price_html($selected_currency, $features_product->id) !!}</p>
-                                    @else
-                                    <p>{!! price_html( get_product_price_html_by_filter(get_role_based_price_by_product_id($features_product->id, $features_product->price)), $selected_currency) !!}</p>
-                                    @endif
-                                    @endif
-
-                                    <div class="title-divider"></div>
-                                    <div class="single-product-add-to-cart">
-                                        @if( $features_product->type == 'simple_product' )
-                                        <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><i class="fa fa-shopping-cart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-                                        <!-- <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange"></i></a>
-
-                                        <a href="{{ route('details-page', $features_product->slug) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a> -->
-
-                                        @elseif( $features_product->type == 'configurable_product' )
-                                        <a href="{{ route('details-page', $features_product->slug) }}" class="btn btn-sm btn-style select-options-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.select_options') }}"><i class="fa fa-hand-o-up"></i></a>
-
-                                        <a href="" class="btn btn-sm btn-style  product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-
-                                        <!-- <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange"></i></a>
-
-                                        <a href="{{ route('details-page', $features_product->slug) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a> -->
-
-                                        @elseif( $features_product->type == 'customizable_product' )
-                                        @if(is_design_enable_for_this_product($features_product->id))
-                                        <a href="{{ route('customize-page', $features_product->slug) }}" class="btn btn-sm btn-style product-customize-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.customize') }}"><i class="fa fa-gears"></i></a>
-
-                                        <a href="" class="btn btn-sm btn-style  product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-
-                                        <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange"></i></a>
-
-                                        <a href="{{ route('details-page', $features_product->slug) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a>
-
-                                        @else
-                                        <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><i class="fa fa-shopping-cart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange"></i></a>
-
-                                        <a href="{{ route('details-page', $features_product->slug) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a>
-                                        @endif
-                                        @elseif( $features_product->type == 'downloadable_product' ) 
-                                        @if(count(get_product_variations( $features_product->id ))>0)
-                                        <a href="{{ route( 'details-page', $features_product->slug ) }}" class="btn btn-sm btn-style select-options-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.select_options') }}"><i class="fa fa-hand-o-up"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange" ></i></a>
-                                        <a href="{{ route('details-page', $features_product->slug ) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a>
-                                        @else
-                                        <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><i class="fa fa-shopping-cart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><i class="fa fa-heart"></i></a>
-                                        <a href="" class="btn btn-sm btn-style product-compare" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_compare_list_label') }}"><i class="fa fa-exchange" ></i></a>
-                                        <a href="{{ route('details-page', $features_product->slug ) }}" class="btn btn-sm btn-style product-details-view" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.product_details_label') }}"><i class="fa fa-eye"></i></a>
-                                        @endif              
-                                        @endif
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-                @foreach($advancedData['features_items'] as $key => $features_product)
                 <div class="product-block all mix bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">                            
-                                    @if(!empty($features_product->image_url))
-                                    <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ get_image_url( $features_product->image_url ) }}" alt="{{ basename( get_image_url( $features_product->image_url ) ) }}" /></a></figure>
-                                    @else
-                                    <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a></figure>
-                                    @endif
+                            @if(!empty($features_product->image_url))
+                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ get_image_url( $features_product->image_url ) }}" alt="{{ basename( get_image_url( $features_product->image_url ) ) }}" /></a></figure>
+                            @else
+                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a></figure>
+                            @endif
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -427,12 +343,33 @@
                     </div>
                 </div>
                 @endforeach
+                
+                <!-- Product Block --> 
+                <div class="product-block all mix bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/1.png') }}" alt=""></figure>
+                            <div class="overlay-box">
+                                <div class="btn-box">
+                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
+                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
+                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-content clearfix">
+                            <span class="cat">Baby Products</span>
+                            <h4 class="name"><a href="shop-single.html">Turpis Faucibus Tempor</a></h4>
+                            <span class="price"><del>$30.00</del> $24.00</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Product Block --> 
                 <div class="product-block all mix baby-prod bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/2.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/2.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -453,7 +390,7 @@
                 <div class="product-block all mix baby-prod col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/3.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/3.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -474,7 +411,7 @@
                 <div class="product-block all mix baby-prod col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/4.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/4.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -495,7 +432,7 @@
                 <div class="product-block all mix fragrance hair-prep bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/5.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/5.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -516,7 +453,7 @@
                 <div class="product-block all mix eye-makeup hair-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/6.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/6.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -537,7 +474,7 @@
                 <div class="product-block all mix fragrance col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/7.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/7.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -558,7 +495,7 @@
                 <div class="product-block all mix eye-makeup hair-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/products/8.png') }}" alt=""></figure>
+                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/8.png') }}" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
@@ -581,22 +518,22 @@
         <div class="banners-area row">
             <!-- Banner Box -->
             <div class="banner-box col-lg-8 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst_beetee/images/resource/banner-1.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-1.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-4 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst_beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst_beetee/images/resource/banner-3.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-3.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst_beetee/images/resource/banner-4.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-4.png') }}" alt=""></a></figure>
             </div>
         </div>
     </div>
@@ -608,8 +545,8 @@
     <div class="row no-gutters">
         <div class="left-column col-lg-6 col-md-12">
             <!-- Image Column -->
-            <div class="image-box" style="background-image: url({{ URL::asset('public/burst_beetee/images/resource/image-1.jpg') }});">
-                <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/image-1.jpg') }}" alt=""></figure>
+            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-1.jpg') }});">
+                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/image-1.jpg') }}" alt=""></figure>
             </div>
 
             <div class="content-box">
@@ -624,7 +561,7 @@
         </div>
 
         <div class="right-column col-lg-6 col-md-12">
-            <div class="content-box" style="background-image: url({{ URL::asset('public/burst_beetee/images/resource/image-2.jpg') }});">
+            <div class="content-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-2.jpg') }});">
                 <div class="inner-box">
                     <div class="sec-title">
                         <h2>Lorem ipsum dolor <br><span>consectetur</span><br> Sed non leo laore</h2>
@@ -634,8 +571,8 @@
                 </div>
             </div>
             <!-- Image Column -->
-            <div class="image-box" style="background-image: url({{ URL::asset('public/burst_beetee/images/resource/image-1-1.jpg') }});">
-                <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/image-1-1.jpg') }}" alt=""></figure>
+            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-1-1.jpg') }});">
+                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/image-1-1.jpg') }}" alt=""></figure>
             </div>
 
         </div>
@@ -656,7 +593,7 @@
             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/news-1.jpg') }}" alt="" /></figure>
+                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-1.jpg') }}" alt="" /></figure>
                         <a href="blog-single.html" class="overlay-link"></a>
                     </div>
                     <div class="lower-content">
@@ -676,7 +613,7 @@
             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/news-2.jpg') }}" alt="" /></figure>
+                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-2.jpg') }}" alt="" /></figure>
                         <a href="blog-single.html" class="overlay-link"></a>
                     </div>
                     <div class="lower-content">
@@ -696,7 +633,7 @@
             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst_beetee/images/resource/news-3.jpg') }}" alt="" /></figure>
+                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-3.jpg') }}" alt="" /></figure>
                         <a href="blog-single.html" class="overlay-link"></a>
                     </div>
                     <div class="lower-content">
@@ -731,7 +668,7 @@
                     <div class="testimonial-carousel owl-carousel owl-theme">
                         <!-- Testimonial Block -->
                         <div class="testimonial-block">
-                            <figure class="image-box"><img src="{{ URL::asset('public/burst_beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
+                            <figure class="image-box"><img src="{{ URL::asset('public/burst-beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
                             <!-- Text Box -->
                             <div class="text-box">
                                 <div class="inner-box">
@@ -747,7 +684,7 @@
 
                         <!-- Testimonial Block -->
                         <div class="testimonial-block">
-                            <figure class="image-box"><img src="{{ URL::asset('public/burst_beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
+                            <figure class="image-box"><img src="{{ URL::asset('public/burst-beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
                             <!-- Text Box -->
                             <div class="text-box">
                                 <div class="inner-box">
@@ -767,7 +704,7 @@
                  <!-- Newslatters-->
                 <div class="newslatters">
                     <h3>Subscribe Now</h3>
-                    <form method="post" action="https://codexlayer.com/html/burst_beetee/blog-sidebar.html">
+                    <form method="post" action="blog-sidebar.html">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Name" required="">
                             <span class="icon flaticon-user-1"></span>

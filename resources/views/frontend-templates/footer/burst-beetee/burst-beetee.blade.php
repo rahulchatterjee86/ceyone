@@ -1,3 +1,4 @@
+<!-- Main Footer -->
 <footer class="main-footer">
     <div class="auto-container">
         <!--Widgets Section-->
@@ -60,12 +61,11 @@
                             </ul>
 
                             <ul class="payments">
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/shopify.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/shopify.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/skrill.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/electron.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/sage.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst_beetee/images/icons/amazon.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/shopify.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/skrill.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/electron.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/sage.jpg') }}" alt=""></a></li>
+                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/amazon.jpg') }}" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,3 +90,4 @@
         </div>
     </div>
 </footer>
+<!-- End Main Footer -->
