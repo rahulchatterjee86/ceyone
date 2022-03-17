@@ -293,7 +293,8 @@ class LoginController extends Controller
       else{
         $username       =      Request::Input('login_username');
         $password       =      bcrypt(Request::Input('login_password'));
-        $userdata       =      ['email' => $username, 'user_status' => 1];
+        $isEmail        =      filter_var($username, FILTER_VALIDATE_EMAIL);
+        $userdata       =      $isEmail ? ['email' => $username, 'user_status' => 1] : ['name' => $username, 'user_status' => 1];
         $data           =      User::where($userdata)->first();
         
         if(!empty($data) && isset($data->password) && isset($data->id)){

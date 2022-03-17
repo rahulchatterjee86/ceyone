@@ -119,8 +119,13 @@
         <div class="col-sm-12 col-md-12 col-lg-9 text-right search-and-compare-item">
         <div class="float-right">
               <ul class="right-menu top-right-menu">
+                @if(session()->has('shopist_frontend_user_id'))
+                <form id="sign-out-form" method="post" action="{{ url('user/account/logout') }}">@csrf</form>
+                <li><a href="#" onclick="document.querySelector('#sign-out-form').submit()" class="main">Sign Out</a></li>
+                @else
                 <li><a href="<?php echo url("/user/login");?>" class="main">Sign In</a></li>
                 <li><a href="<?php echo url("/user/registration");?>" class="main">Register</a></li>
+                @endif
                 <li class="wishlist-content">
                   <a class="main" href="{{ route('my-saved-items-page') }}">
                     <i class="fa fa-heart"></i> 
