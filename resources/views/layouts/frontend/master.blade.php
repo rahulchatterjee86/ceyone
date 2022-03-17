@@ -31,6 +31,10 @@
 
         @include('includes.frontend.burst-beetee.footer')
 
+        <input type="hidden" name="hf_base_url" id="hf_base_url" value="{{ url('/') }}">
+        <input type="hidden" name="cart_url" id="cart_url" value="{{ route('cart-page') }}">
+        <input type="hidden" name="currency_symbol" id="currency_symbol" value="{{ $_currency_symbol }}">
+
     </div><!-- Page Wrapper -->
 
     <!-- Scroll To Top -->

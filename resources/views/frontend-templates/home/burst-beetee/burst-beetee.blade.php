@@ -97,25 +97,32 @@
         <div class="carousel-outer">
             <!-- Products Carousel -->
             <div class="products-carousel owl-carousel owl-theme">
+                
+                @foreach($advancedData['features_items'] as $key => $features_product)
                 <!-- Product Block --> 
                 <div class="product-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/1.png') }}" alt=""></figure>
+                            @if(!empty($features_product->image_url))
+                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ get_image_url( $features_product->image_url ) }}" alt="{{ basename( get_image_url( $features_product->image_url ) ) }}" /></a></figure>
+                            @else
+                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a></figure>
+                            @endif
                             <div class="overlay-box">
                                 <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
+                                    <a href="#"><span class="icon flaticon-heart"></span></a>
+                                    <a href="#" class="add-to-cart-bg" data-id="{{ $features_product->id }}" ><span class="icon flaticon-shopping-cart"></span></a>
+                                    {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                 </div>
                             </div>
                         </div>
                         <div class="lower-content clearfix">
-                            <h4 class="name"><a href="shop-single.html">Desodorante Para Mujer</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
+                            <h4 class="name"><a href="shop-single.html">{!! $features_product->title !!}</a></h4>
+                            <span class="price"><del>${{ $features_product->regular_price }}</del> ${{ $features_product->price }}</span>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
                 <!-- Product Block --> 
                 <div class="product-block">
