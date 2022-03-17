@@ -80,6 +80,8 @@
 <link rel="stylesheet" href="{{ URL::asset('public/slick/slick.css') }}" />
 <link rel="stylesheet" href="{{ URL::asset('public/slick/slick-theme.css') }}" />
 
+
+
 <link rel="stylesheet" href="{{ URL::asset('public/templates-assets/footer/black-crazy/style.css') }}" />
 
 <!--load header style-->
