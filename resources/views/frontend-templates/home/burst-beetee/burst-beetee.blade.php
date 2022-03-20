@@ -316,11 +316,11 @@
                     @foreach($advancedData['categories'] as $key => $category)
                     <li class="filter" data-role="button" data-filter=".{{ $category->slug }}">{{ $category->name }}</li>
                     @endforeach
-                    <li class="filter" data-role="button" data-filter=".baby-prod">Baby Products</li>
+                    {{-- <li class="filter" data-role="button" data-filter=".baby-prod">Baby Products</li>
                     <li class="filter" data-role="button" data-filter=".bath-prep">Bath Preparations</li>
                     <li class="filter" data-role="button" data-filter=".eye-makeup">Eye Makeup</li>
                     <li class="filter" data-role="button" data-filter=".fragrance">Fragrance</li>
-                    <li class="filter" data-role="button" data-filter=".hair-prep">Hair Preparations</li>
+                    <li class="filter" data-role="button" data-filter=".hair-prep">Hair Preparations</li> --}}
                 </ul>
             </div>
                                                                             
@@ -339,8 +339,7 @@
                                 <div class="btn-box">
                                     <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
                                     <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><span class="icon flaticon-shopping-cart"></span></a>
-                                  
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
+                                    {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                 </div>
                             </div>
                         </div>
@@ -353,7 +352,7 @@
                 </div>
                 @endforeach
                 
-                <!-- Product Block --> 
+                {{-- <!-- Product Block --> 
                 <div class="product-block all mix bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
@@ -519,7 +518,7 @@
                             <span class="price"><del>$30.00</del> $24.00</span>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
 

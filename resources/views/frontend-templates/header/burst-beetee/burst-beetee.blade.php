@@ -169,7 +169,7 @@
                     <li><a href="account.html"><span class="icon flaticon-user-1"></span></a></li>
                     <li><a href="#"><span class="icon flaticon-compare"></span></a></li>
                     <li><a href="wishlist.html"><span class="icon flaticon-heart"></span></a></li>
-                    <li class="cart-icon"><button type="button" class="cart-btn"><span class="icon flaticon-shopping-cart"></span></button></li>
+                    <li class="cart-icon"><button type="button" class="cart-btn"><span class="cart-number">{{ Cart::count() }}</span><span class="icon flaticon-shopping-cart"></span></button></li>
                 </ul>
             </div>
         </div>
@@ -215,39 +215,29 @@
         <span class="cart-back-drop"></span>
         <div class="shopping-cart">
             <div class="cart-header">
-                <div class="title">Shopping Cart <span>(3)</span></div>
+                <div class="title">Shopping Cart <span>({{ Cart::count() }})</span></div>
                 <button class="close-cart"><span class="flaticon-add"></span></button>
             </div>
             <ul class="shopping-cart-items">
+                @foreach(Cart::items() as $index => $items)
                 <li class="cart-item">
-                    <img src="{{ URL::asset('public/burst-beetee/images/resource/products/p-thumb-1.png') }}" alt="#" class="thumb" />
-                    <span class="item-name">Desodorante Para Mujer</span>
-                    <span class="item-quantity">1 x <span class="item-amount">$50.00</span></span>
-                    <a href="shop-single.html" class="product-detail"></a>
-                    <button class="remove">Remove</button>
+                    @if($items->img_src)  
+                    <a href="{{ route('details-page', get_product_slug($items->id)) }}"><img src="{{ get_image_url($items->img_src) }}" alt="#" class="thumb" alt="product" /></a>
+                    @else
+                    <a href="{{ route('details-page', get_product_slug($items->id)) }}"><img src="{{ default_placeholder_img_src() }}" alt="no_image"></a>
+                    @endif
+                    <span class="item-name">{!! $items->name !!}</span>
+                    <span class="item-quantity">{{ $items->quantity }} x <span class="item-amount">${{ $items->price }}</span></span>
+                    <a href="{{ route('details-page', get_product_slug($items->id)) }}" class="product-detail"></a>
+                    <a href="{{ route('removed-item-from-cart', $index)}}" class="remove">Remove</a>
                 </li>
-
-                <li class="cart-item">
-                    <img src="{{ URL::asset('public/burst-beetee/images/resource/products/p-thumb-2.png') }}" alt="#" class="thumb"  />
-                    <span class="item-name">Desodorante Para Mujer</span>
-                    <span class="item-quantity">1 x <span class="item-amount">$25.00</span></span>
-                    <a href="shop-single.html" class="product-detail"></a>
-                    <button class="remove">Remove</button>
-                </li>
-
-                <li class="cart-item">
-                    <img src="{{ URL::asset('public/burst-beetee/images/resource/products/p-thumb-3.png') }}" alt="#" class="thumb"  />
-                    <span class="item-name">Desodorante Para Mujer</span>
-                    <span class="item-quantity">1 x <span class="item-amount">$15.00</span></span>
-                    <a href="shop-single.html" class="product-detail"></a>
-                    <button class="remove">Remove</button>
-                </li>
+                @endforeach
             </ul>
 
             <div class="cart-footer">
-                <div class="shopping-cart-total"><strong>Subtotal:</strong> $90.00</div>
-                <a href="shopping-cart.html" class="theme-btn btn-style-one"><span class="btn-title">View Cart</span></a>
-                <a href="checkout.html" class="theme-btn btn-style-one"><span class="btn-title">Checkout</span></a>
+                <div class="shopping-cart-total"><strong>Subtotal:</strong> {!! price_html( get_product_price_html_by_filter(Cart::getTotal()) ) !!}</div>
+                <a href="{{ route('cart-page') }}" class="theme-btn btn-style-one"><span class="btn-title">View Cart</span></a>
+                <a href="{{ route('checkout-page') }}" class="theme-btn btn-style-one"><span class="btn-title">Checkout</span></a>
             </div>
         </div> <!--end shopping-cart -->
     </div>
