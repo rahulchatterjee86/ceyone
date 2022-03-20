@@ -325,9 +325,9 @@
             </div>
                                                                             
             <div class="filter-list row">
-                @foreach($advancedData['features_items'] as $key => $features_product)
+                @foreach($advancedData['latest_items'] as $key => $features_product)
                 <!-- Product Block --> 
-                <div class="product-block all mix bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="product-block all mix {{ Str::kebab($features_product->categories) }} col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">                            
                             @if(!empty($features_product->image_url))
@@ -344,7 +344,7 @@
                             </div>
                         </div>
                         <div class="lower-content clearfix">
-                            <span class="cat">{!! $features_product->type !!}</span>
+                            <span class="cat">{!! $features_product->categories !!}</span>
                             <h4 class="name"><a href ="{{ route('details-page', $features_product->slug) }}">{!! $features_product->title !!}</a></h4>
                             <span class="price"><del>$30.00</del> $24.00</span>
                         </div>

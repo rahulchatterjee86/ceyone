@@ -28,6 +28,8 @@ use App\Library\CommonFunction;
 use Carbon\Carbon;
 use App\Models\SaveCustomDesign;
 
+use Illuminate\Support\Str;
+
 
 class ProductsController extends Controller
 {
@@ -2706,7 +2708,10 @@ class ProductsController extends Controller
       $advanced_arr['categories']         =   $get_categories;
       $advanced_arr['todays_deal']        =   $todays_deal_arr;
     }
-    $advanced_arr['latest_items']         =   $get_latest_items;
+    $advanced_arr['latest_items']         =   collect($get_latest_items)->map(function($item) {
+      $item->{'categories'} = get_single_page_product_categories_lists($item->id);
+      return $item;
+    });
     $advanced_arr['best_sales']           =   $best_sales_arr;
 
     return $advanced_arr;
