@@ -946,6 +946,9 @@ class FrontendManagerController extends Controller
 
       $final_unique_cross_sell_products = array_diff($unique_2, $unique_1);
       $data['cross_sell_products'] = $final_unique_cross_sell_products;
+      $product  = Product::where('id',$item->product_id)->where('cart_total_manage',1)->first();
+      $data['cart_total_manage'] = $product->cart_total_manage??'';
+      $data['cart_total'] = $product->cart_total??'';
     }
 
     return view('pages.frontend.frontend-pages.cart', $data);
