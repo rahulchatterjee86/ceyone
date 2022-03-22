@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col top-left">
                 <ul class="contact-list clearfix">
-                    <li><i class="icon flaticon-telephone-1"></i> <a href="tel:+00123456789">+00 123 456 789</a></li>
-                    <li><i class="icon flaticon-mail"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+                    <li><i class="icon flaticon-telephone-1"></i> <a href="tel:033 40631211">033 40631211</a></li>
+                    <li><i class="icon flaticon-mail"></i> <a href="mailto:info@ceyone.co.in">info@ceyone.co.in</a></li>
                 </ul>
             </div>
             <div class="col top-center">
@@ -23,7 +23,7 @@
         <!--Mobile Navigation Toggler-->
         <div class="mobile-nav-toggler"><span class="icon fa fa-bars"></span></div>
 
-        <div class="logo"><a href="index.html"><img src="{{ URL::asset('public/burst-beetee/images/logo.png') }}" alt=""></a></div>
+        <div class="logo"><a href="{{ url("/") }}"><img src="{{ URL::asset('public/burst-beetee/images/logo.png') }}" alt=""></a></div>
 
         <!--Nav Box-->
         <div class="nav-outer">

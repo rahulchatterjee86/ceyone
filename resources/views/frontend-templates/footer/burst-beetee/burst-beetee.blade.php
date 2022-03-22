@@ -9,12 +9,11 @@
                     <div class="footer-widget about-widget">
                         <h4 class="widget-title">About BB</h4>
                         <div class="widget-content">
-                            <div class="text">Class aptent taciti sociosqu ad litora torqu per conubia nostra, per ince ptos himena. </div>
+                            <div class="text">Ceyone Nutri India Private Limited is an excellent platform for self-determined professionals who seek to discover new highs in entrepreneurial.. <a href="{{ url("/page/about") }}">Read More</a> </div>
                              <div class="social-link">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/ceyonenutriindia/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/company/ceyone-nutri-india-pvt-ltd"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://instagram.com/ceyone_official?igshid=1ga4vcwuk2m2i"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -22,14 +21,12 @@
 
                 <div class="footer-column col-lg-3 col-md-6 col-sm-12">
                     <div class="footer-widget links-widget">
-                        <h4 class="widget-title">Shop With Us</h4>
+                        <h4 class="widget-title">ACCOUNT</h4>
                         <div class="widget-content">
                             <ul class="list">
-                                <li><a href="#">Baby Products</a></li>
-                                <li><a href="#">Bath Preparations</a></li>
-                                <li><a href="#">Eye Makeup</a></li>
-                                <li><a href="#">Fragrance</a></li>
-                                <li><a href="#">Hair Preparations</a></li>
+                                <li><a href="{{ url("/user/account/my-saved-items") }}">Wishlist</a></li>
+                                <li><a href="{{ url("/checkout") }}">Checkout</a></li>
+                                <li><a href="{{ url("/user/login") }}">Login</a></li>
                             </ul>
                         </div>
                     </div>
@@ -37,14 +34,16 @@
 
                 <div class="footer-column col-lg-3 col-md-6 col-sm-12">
                     <div class="footer-widget links-widget">
-                        <h4 class="widget-title">Support</h4>
+                        <h4 class="widget-title">INFORMATION</h4>
                         <div class="widget-content">
                             <ul class="list">
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Refund & Return</a></li>
-                                <li><a href="#">Deliveries</a></li>
+                                <li><a href="{{ url("/page/sitemap") }}">Sitemap</a></li>
+                                <li><a href="{{ url("/page/privacy-policy") }}">Privacy Policy</a></li>
+                                <li><a href="{{ url("/page/terms-and-conditions") }}">Terms of Use</a></li>
+                                <li><a href="{{ url("/page/return-policy") }}">Return Policy</a></li>
+                                <li><a href="{{ url("/page/shipping-and-pickup") }}">Shipping and Pickup</a></li>
+                                <li><a href="{{ url("/page/refund-cancellation") }}">Refund/Cancellation</a></li>
+                                <li><a href="{{ url("/contact-us") }}">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -55,9 +54,13 @@
                         <h4 class="widget-title">Contacts</h4>
                         <div class="widget-content">
                             <ul class="list">
-                                <li><span>176 W street name, New York, <br>NY 10014</span></li>
-                                <li>Email: <a href="#">info@yoursite.com</a></li>
-                                <li>Telephone: <a href="#">+1(800)123-4566</a></li>
+                                <li><span>Ceyone Nutri India Pvt Ltd<br>
+                                    2nd Floor, Triti Apartment,<br>
+                                    100 Manohar Pukur Road,<br>
+                                    Kolkata-700029,<br>
+                                    West Bengal, India</span></li>
+                                <li>Email at: <a href="mailto:info@ceyone.co.in">info@ceyone.co.in</a></li>
+                                <li>Land No: <a href="tel:033 40631211">033 40631211</a></li>
                             </ul>
 
                             <ul class="payments">
@@ -79,12 +82,9 @@
     <div class="footer-bottom">
         <div class="auto-container">
             <div class="outer-box">
-                <div class="copyright-text">Copyright © 2020, BurstBeauty | Designed by <a href="#">CodeXLayer</a></div>
+                <div class="copyright-text">Copyright © 2022, Ceyone Nutri India Pvt. Ltd | All rights reserved.</div>
                 <ul class="footer-nav">
-                    <li><a href="#">Cosmetics</a></li>
-                    <li><a href="#">Makeup Brush</a></li>
-                    <li><a href="#">Foundation</a></li>
-                    <li><a href="#">Lipstick</a></li>
+                    <li><a href="#">Designed & Developed by Ceyone Nutri India Pvt. Ltd</a></li>
                 </ul>
             </div>
         </div>
