@@ -1,4 +1,3 @@
-<script src="{{ URL::asset('public/burst-beetee/js/jquery.js') }}"></script> 
 <script src="{{ URL::asset('public/burst-beetee/js/popper.min.js') }}"></script>
 <script src="{{ URL::asset('public/burst-beetee/js/bootstrap.min.js') }}"></script>
 <script src="{{ URL::asset('public/burst-beetee/js/jquery.fancybox.js') }}"></script>

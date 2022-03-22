@@ -158,7 +158,7 @@ class FrontendManagerController extends Controller
         }
       }
 
-      return view('pages.frontend.frontend-pages.categories-main', $data);
+      return view('pages.frontend.frontend-pages.burst-beetee.categories-main', $data);
     }
     else{
       return view('errors.no_data');

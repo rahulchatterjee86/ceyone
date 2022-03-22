@@ -9,6 +9,20 @@
 <link rel="shortcut icon" href="{{ URL::asset('public/burst-beetee/images/favicon.png') }}" type="image/x-icon">
 <link rel="icon" href="{{ URL::asset('public/burst-beetee/images/favicon.png') }}" type="image/x-icon">
 
+<link rel="stylesheet" href="{{ URL::asset('public/plugins/bootstrap-slider/slider.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('public/designer/scroll/jquery.mCustomScrollbar.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('public/frontend/css/common.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('public/frontend/css/price-range.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('public/plugins/iCheck/square/purple.css') }}" />
+
+<script type="text/javascript" src="{{ URL::asset('public/burst-beetee/js/jquery.js') }}"></script> 
+<script type="text/javascript" src="{{ URL::asset('public/frontend/js/jquery.scrollUp.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/frontend/js/price-range.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/plugins/iCheck/icheck.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/plugins/bootstrap-slider/bootstrap-slider.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/designer/scroll/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/frontend/js/common.js') }}"></script>
+
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">

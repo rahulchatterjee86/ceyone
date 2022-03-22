@@ -31,53 +31,31 @@
             <nav class="main-menu navbar-expand-md">
                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                     <ul class="navigation clearfix">
-                        <li class="current dropdown"><a href="index.html">Home</a>
-                            <ul>
-                                <li><a href="index.html">Home Page V1</a></li>
-                                <li><a href="index-2.html">Home Page V2</a></li>
-                            </ul>
-                        </li>
                         <li class="dropdown has-mega-menu"><a href="#">Shop</a>
                             <div class="mega-menu">
                                 <div class="mega-menu-bar row clearfix">
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
-                                        <h3>Facecare</h3>
+                                        <h3>Health Care</h3>
                                         <ul>
-                                            <li><a href="shop-single.html">Night Cream II</a></li>
-                                            <li><a href="shop-single.html">BB Cream</a></li>
-                                            <li><a href="shop-single.html">DD Cleanser II</a></li>
-                                            <li><a href="shop-single.html">Lara Face Serum</a></li>
-                                            <li><a href="shop-single.html">BB Spray</a></li>
+                                            <li><a href="{{ url("/product/categories/health-care") }}">Health Care</a></li>
                                         </ul>
                                     </div>
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
-                                        <h3>Skin Care</h3>
+                                        <h3>Oral Care</h3>
                                         <ul>
-                                            <li><a href="shop-single.html">Night Cream II</a></li>
-                                            <li><a href="shop-single.html">BB Cream</a></li>
-                                            <li><a href="shop-single.html">DD Cleanser II</a></li>
-                                            <li><a href="shop-single.html">Lara Face Serum</a></li>
-                                            <li><a href="shop-single.html">BB Spray</a></li>
+                                            <li><a href="{{ url("/product/categories/oral-care") }}">Oral Care</a></li>
                                         </ul>
                                     </div>
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
-                                        <h3>Hair Care</h3>
+                                        <h3>Agri Care</h3>
                                         <ul>
-                                            <li><a href="shop-single.html">Night Cream II</a></li>
-                                            <li><a href="shop-single.html">BB Cream</a></li>
-                                            <li><a href="shop-single.html">DD Cleanser II</a></li>
-                                            <li><a href="shop-single.html">Lara Face Serum</a></li>
-                                            <li><a href="shop-single.html">BB Spray</a></li>
+                                            <li><a href="{{ url("/product/categories/agri-care") }}">Agri Care</a></li>
                                         </ul>
                                     </div>
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
-                                        <h3>Makeup</h3>
+                                        <h3>Agri Care</h3>
                                         <ul>
-                                            <li><a href="shop-single.html">Night Cream II</a></li>
-                                            <li><a href="shop-single.html">BB Cream</a></li>
-                                            <li><a href="shop-single.html">DD Cleanser II</a></li>
-                                            <li><a href="shop-single.html">Lara Face Serum</a></li>
-                                            <li><a href="shop-single.html">BB Spray</a></li>
+                                            <li><a href="{{ url("/product/categories/personal-care") }}">Personal care</a></li>
                                         </ul>
                                     </div>
                                     <div class="image-box">
@@ -86,19 +64,11 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="dropdown"><a href="blog.html">Blog</a>
+                        <li class="dropdown"><a href="blog.html">About</a>
                             <ul>
-
-                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="{{ url("/page/about") }}">Company Profile</a></li>
                                 <li><a href="blog.html">Blog Classic</a></li>
                                 <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                <li class="dropdown"><a href="blog-single.html">Blog Detail</a>
-                                    <ul>
-                                        <li><a href="blog-single.html">Blog Detail WO Sidebar</a></li>
-                                        <li><a href="blog-single-left-sidebar.html">Blog Detail WL Sidebar</a></li>
-                                        <li><a href="blog-single-right-sidebar.html">Blog Detail WR Sidebar</a></li>
-                                    </ul>
-                                </li>
 
                             </ul>
                         </li>
@@ -181,9 +151,9 @@
         <button class="close-search"><span class="fa fa-times"></span></button>
         
         <div class="search-inner">
-            <form method="post" action="search-error.html">
+            <form method="get" action="{{ route('shop-page') }}">
                 <div class="form-group">
-                    <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                    <input type="search" name="srch_term" value="" placeholder="Search..." required="">
                     <button type="submit"><i class="flaticon-search-1"></i></button>
                 </div>
             </form>
