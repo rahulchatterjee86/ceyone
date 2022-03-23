@@ -240,7 +240,7 @@
                 </div>
             </div>
             <!--End Product Info Tabs-->
-            
+            @if(count($related_items) > 0)
             <!-- Products Section -->
             <section class="products-section-two alternate">
                 <div class="auto-container">
@@ -250,93 +250,50 @@
                     </div>
                                                    
                     <div class="row">
+                        
+                        @foreach($related_items as $products)
                         <!-- Product Block --> 
                         <div class="product-block col-lg-3 col-md-6 col-sm-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                    <figure class="image"><img src="images/resource/products/5.png" alt=""></figure>
+                                    @if($products['_product_related_images_url']->product_image)
+                                    <figure class="image"><img src="{{ get_image_url($products['_product_related_images_url']->product_image) }}"  alt="{{ basename( $products['_product_related_images_url']->product_image )}}"></figure>
+                                    @else
+                                    <figure class="image"><img src="{{ default_placeholder_img_src() }}" ></figure>
+                                    @endif
                                     <div class="overlay-box">
                                         <div class="btn-box">
                                             <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                            <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                            <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
+                                            <a data-id="{{ $products['id'] }}" href="" class="add-to-cart-bg"><span class="icon flaticon-shopping-cart"></span></a>
+                                            {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content clearfix">
                                     <span class="cat">Baby Products</span>
-                                    <h4 class="name"><a href="shop-single.html">Curabitur Sed Metus</a></h4>
-                                    <span class="price"><del>$30.00</del> $24.00</span>
+                                    <h4 class="name"><a href="{{ route('details-page', $products['post_slug'] ) }}">{!! get_product_title($products['id']) !!}</a></h4>
+                                    <span class="price">
+                                        @if(get_product_type($products['id']) == 'simple_product')
+                                            <p>{!! price_html( get_product_price($products['id']), get_frontend_selected_currency() ) !!}</p>
+                                        @elseif(get_product_type($products['id']) == 'configurable_product')
+                                            <p>{!! get_product_variations_min_to_max_price_html(get_frontend_selected_currency(), $products['id']) !!}</p>
+                                        @elseif(get_product_type($products['id']) == 'customizable_product' || get_product_type($products['id']) == 'downloadable_product')
+                                            @if(count(get_product_variations($products['id']))>0)
+                                                <p>{!! get_product_variations_min_to_max_price_html(get_frontend_selected_currency(), $products['id']) !!}</p>
+                                            @else
+                                                <p>{!! price_html( get_product_price($products['id']), get_frontend_selected_currency() ) !!}</p>
+                                            @endif
+                                        @endif
+                                    </span>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product Block --> 
-                        <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="images/resource/products/6.png" alt=""></figure>
-                                    <div class="overlay-box">
-                                        <div class="btn-box">
-                                            <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                            <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                            <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lower-content clearfix">
-                                    <span class="cat">Bath Preparations</span>
-                                    <h4 class="name"><a href="shop-single.html">Venenatis Eu Eget</a></h4>
-                                    <span class="price"><del>$30.00</del> $24.00</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product Block --> 
-                        <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="images/resource/products/7.png" alt=""></figure>
-                                    <div class="overlay-box">
-                                        <div class="btn-box">
-                                            <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                            <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                            <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lower-content clearfix">
-                                    <span class="cat">Baby Products</span>
-                                    <h4 class="name"><a href="shop-single.html">Nulla Porta Urna</a></h4>
-                                    <span class="price"><del>$30.00</del> $24.00</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product Block --> 
-                        <div class="product-block col-lg-3 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="images/resource/products/8.png" alt=""></figure>
-                                    <div class="overlay-box">
-                                        <div class="btn-box">
-                                            <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                            <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                            <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lower-content clearfix">
-                                    <span class="cat">Baby Products</span>
-                                    <h4 class="name"><a href="shop-single.html">Desodorante Para Mujer</a></h4>
-                                    <span class="price"><del>$30.00</del> $24.00</span>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </section>
             <!-- End Products Section -->
+            @endif
         </div><!-- Product Detail -->
     </div>
 </section>
