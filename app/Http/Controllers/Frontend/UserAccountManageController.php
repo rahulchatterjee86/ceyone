@@ -69,7 +69,7 @@ class UserAccountManageController extends Controller
                         ->get();
   }
   
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
 
   
