@@ -67,12 +67,12 @@
                         <li class="dropdown"><a href="blog.html">About</a>
                             <ul>
                                 <li><a href="{{ url("/page/about") }}">Company Profile</a></li>
-                                <li><a href="blog.html">Blog Classic</a></li>
-                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                <li><a href="{{ url("/page/vision-mission") }}">Vision and Mission</a></li>
+                                <li><a href="{{ url("#") }}">Manufacturing Process</a></li>
 
                             </ul>
                         </li>
-                        <li class="dropdown has-mega-menu"><a href="#">Pages</a>
+                        <!--<li class="dropdown has-mega-menu"><a href="#">Pages</a>
                             <div class="mega-menu">
                                 <div class="mega-menu-bar row clearfix">
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
@@ -124,9 +124,33 @@
                                     </div>
                                 </div>
                             </div>
+                        </li>-->
+                        <li class="dropdown"><a href="javascript:;">News</a>
+                            <ul>
+                                <li class="dropdown"><a  href="{{ url("#") }}">Achievers</a>
+                                    <ul>
+                                        <li><a href="{{ url("/categories/executive-director") }}">Executive Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-senior-director") }}">Executive Senior Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-silver-director") }}">Executive Silver Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-gold-director") }}">Executive Gold Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-ruby-director") }}">Executive Ruby Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-emerald-director") }}">Executive Emerald Director</a></li>
+                                        <li><a href="{{ url("/categories/executive-diamond-director") }}">Executive Diamond Director</a></li>
+                                        <li><a href="{{ url("/categories/chairmans-club") }}">Chairman's Club</a></li>
+                                    </ul>
+                                </li>
+                                <li><a  href="{{ url("#") }}">Notices</a> </li>            
+                                <li><a  href="{{ url("#") }}">Promotions and offers</a></li>
+                                <li><a href="{{url("/testimonials") }}">Testimonials</a></li>
+                                <li><a href="{{url("/gallery") }}">Gallery</a></li>
+                            </ul>
                         </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="dropdown"><a href="{{url("#") }}">Opportunity</a>
+                            <ul> 
+                                <li><a href="{{url("/page/opportunity") }}">Business Plan</a></li>
+                                <li><a href="{{url("/downloads") }}">Download</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
