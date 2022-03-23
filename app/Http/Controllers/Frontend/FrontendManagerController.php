@@ -991,7 +991,8 @@ class FrontendManagerController extends Controller
       $data['advanced_data']   =   $this->CMS->get_blog_advanced_data();
       $data['categoriesTree']  =   $this->product->get_categories(0, 'blog_cat');
 
-      return view('pages.frontend.frontend-pages.blog-categories-post', $data);
+      return view('pages.frontend.frontend-pages.burst-beetee.blog-categories-post', $data);
+      // return view('pages.frontend.frontend-pages.blog-categories-post', $data);
     }
     else{
       return view('errors.no_data');
@@ -1013,7 +1014,7 @@ class FrontendManagerController extends Controller
       $data = $this->classCommonFunction->get_dynamic_frontend_content_data();
       $data['page_data'] = $get_page_by_filter;
 
-      return view('pages.frontend.frontend-pages.custom-single-page', $data);
+      return view('pages.frontend.frontend-pages.burst-beetee.custom-single-page', $data);
     }
     else{
       return view('errors.no_data');

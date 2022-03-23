@@ -3171,7 +3171,7 @@ form .response .text-info{
 
 .about-section .image-column .bb-image{
   position: relative;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -100px;
   margin-bottom: 0;
 }
@@ -6057,12 +6057,14 @@ a.ui-button:active, .ui-button:active,
   transition: all 500ms ease;
 }
 
+
+
 .team-block .name{
   position: absolute;
   left: 0;
   top: 0;
   padding: 20px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.2em;
   color: #620d98;
   font-weight: 700;
@@ -6075,7 +6077,7 @@ a.ui-button:active, .ui-button:active,
 
 .team-block .designation {
     position: absolute;
-    right: -22px;
+    right: 2px;
     top: 27px;
     color: #000000;
     font-size: 15px;

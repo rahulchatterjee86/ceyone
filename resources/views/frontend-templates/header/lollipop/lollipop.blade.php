@@ -270,18 +270,7 @@
                     </a>
                       <div class="dropdown-menu sml-menu" aria-labelledby="navbarDropdown">
                         <ul>
-                            <li><a class="dropdown-item has-submenu" href="#">Achievers</a>
-                            <ul class="submenu dropdown-menu third-lavel">     
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-director");?>">Executive Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-senior-director");?>">Executive Senior Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-silver-director");?>">Executive Silver Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-gold-director");?>">Executive Gold Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-ruby-director");?>">Executive Ruby Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-emerald-director");?>">Executive Emerald Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/executive-diamond-director");?>">Executive Diamond Director</a></li>
-                                  <li><a class="dropdown-item" href="<?php echo url("/categories/chairmans-club");?>">Chairman's Club</a></li>
-                              </ul>
-                            </li>
+                            <li><a class="dropdown-item has-submenu" href="#">Achievers</a></li>
                             <li><a class="dropdown-item" href="#">Notices</a> </li>                       
                             <li><a class="dropdown-item" href="#">Promotions and offers</a></li>
                             <li><a class="dropdown-item" href="<?php echo url("/testimonials");?>">Testimonials</a></li>

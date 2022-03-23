@@ -6,10 +6,10 @@
             <div class="auto-container">
                 <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/1.png') }});"></div></div>
                 <div class="content-box">
-                    <h4>Burst BeeTee Makeup Products</h4>
-                    <h2><strong>We Don't</strong> Just Sell Makeup</h2>
-                    <div class="text">Nam purus diam, efficitur at velit et, hendrerit dapibus magna. Donec in metus nisl. Curabitur non molestie ante.</div>
-                    <a href="services.html" class="theme-btn icon-btn-one"><span>Read More</span></a>
+                    <h4>Caring in the times of</h4>
+                    <h2><strong>COVID 19</strong> Boost your immunity</h2>
+                    <div class="text">Boost your immunity with NT-Oxidant, Spirulina, Ayush Kwath.</div>
+                    <a href="{{ url ("/product/categories/health-care")}}" class="theme-btn icon-btn-one"><span>Read More</span></a>
                 </div>
             </div>
         </div>
@@ -19,22 +19,23 @@
             <div class="auto-container">
                 <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/2.jpg') }});"></div></div>
                 <div class="content-box">
-                    <h4>Burst BeeTee Makeup Products</h4>
-                    <h2><strong>A Website</strong> Makes it real</h2>
-                    <div class="text">Nam purus diam, efficitur at velit et, hendrerit dapibus magna. Donec in metus nisl. Curabitur non molestie ante.</div>
-                    <a href="services.html" class="theme-btn icon-btn-one"><span>Read More</span></a>
+                    <h4>Ceyone Nutri Makeup Products</h4>
+                    <h2><strong>Rediscover</strong> Yourself With Ceyone</h2>
+                    <div class="text">Ceyone Nutri India Private Limited is an excellent platform for self-determined professionals who seek to discover new highs</div>
+                    <a href="{{url ("/product/categories/oral-care")}}" class="theme-btn icon-btn-one"><span>Read More</span></a>
                 </div>
             </div>
         </div>
 
-        <!-- Slide Item -->
-        <div class="slide-item style-three">
+        <!-- Slide Item three
+        <div class="slide-item style-three"> -->
+        <div class="slide-item style-two">
             <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/3.jpg') }});"></div></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h4>Burst BeeTee Makeup Products</h4>
-                    <h2><strong>Makeup</strong> Is an Art</h2>
-                    <a href="services.html" class="theme-btn icon-btn-one"><span>Read More</span></a>
+                    <h4>With Ceyone Always be</h4>
+                    <h2><strong>The One</strong> You Are</h2>
+                    <a href="{{url ("/product/categories/personal-care")}}" class="theme-btn icon-btn-one"><span>Read More</span></a>
                 </div>
             </div>
         </div>
@@ -50,8 +51,8 @@
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="icon flaticon-air-freight"></span>
-                    <h4><a href="#">Worldwide Shipping</a></h4>
-                    <p>Lorem ipsum dolor sit</p>
+                    <h4><a href="javascript:;">NATIONWIDE SERVICE</a></h4>
+                    <p>The ultimate care</p>
                 </div>
             </div>
 
@@ -59,8 +60,8 @@
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="icon flaticon-support-2"></span>
-                    <h4><a href="#">Customer Support 24/7</a></h4>
-                    <p>Suspendisse ac lacus odio</p>
+                    <h4><a href="javascript:;">24/7 HELP CENTRE</a></h4>
+                    <p>At your Service</p>
                 </div>
             </div>
 
@@ -68,8 +69,8 @@
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="icon flaticon-reload-1"></span>
-                    <h4><a href="#">Free Returns</a></h4>
-                    <p>Aliquam mollis purus in es</p>
+                    <h4><a href="javascript:;">SAFE PAYMENT</a></h4>
+                    <p>Make hassle free Payment</p>
                 </div>
             </div>
 
@@ -77,8 +78,8 @@
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="icon flaticon-gift"></span>
-                    <h4><a href="#">Gift Vouchers</a></h4>
-                    <p>Cras a nunc id risus</p>
+                    <h4><a href="javascript:;">QUICK DELIVERY</a></h4>
+                    <p>Get at your doorstep</p>
                 </div>
             </div>
         </div>
@@ -264,16 +265,16 @@
                         <h3 class="title">Hot Product</h3>
                         <div class="content">
                             <div class="time-counter">
-                                <div class="time-countdown" data-countdown="12/12/2020"></div>
+                                <div class="time-countdown" data-countdown="06/06/2022"></div>
                                 <div class="info">
-                                    <h4 class="name">Desodorante Para </h4>
-                                    <span class="price"><del>$30.00</del> $24.00</span>
+                                    <h4 class="name">ALWAYS 21 FACE WASH ( 60 ML)</h4>
+                                    <span class="price"><del>Rs.400</del>Rs.290</span>
                                 </div>
                             </div>
 
                             <div class="image-box">
                                 <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/hot-product.png') }}" alt=""></figure>
-                                <div class="sale-tag">Sale <span>50% OFF</span></div>
+                                <div class="sale-tag">Sale <span>30% OFF</span></div>
                             </div>
                         </div>
                     </div>
@@ -281,7 +282,7 @@
             </div>
         </div>
         <div class="btn-box">
-            <a href="shop.html" class="theme-btn icon-btn-one"><span>View All</span></a>
+            <a href="{{url ("/product/categories/health-care")}}" class="theme-btn icon-btn-one"><span>View All</span></a>
         </div>
     </div>
 </section>
@@ -291,9 +292,9 @@
 <section class="call-to-action" style="background-image: url({{ URL::asset('public/burst-beetee/images/background/1.jpg') }});">
     <div class="auto-container">
         <div class="sec-title text-center">
-            <h2>CLEAN ORGANIC AND NATURAL <br>COSMETIC PRODUCTS</h2>
-            <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet nisl. Sed quis lorem condimentum, mattis nulla a, maximus diam. Phasellus non justo vitae est placerat dictum faucibus quis elit.Nam fringilla sodales arcu ullamcorper tincidunt.</div>
-            <a href="shop.html" class="theme-btn icon-btn-one"><span>Products</span></a>
+            <h2>CLEAN ORGANIC AND NATURAL <br>SKIN CARE PRODUCTS</h2>
+            <div class="text"> Ceyone Nutri India Private Limited is an excellent platform for self-determined professionals who seek to discover new highs in entrepreneurial ventures for a more meaningful life. Our business plan not only transforms your life physically and financially, but also touches those around you.</div>
+            <a href="{{url ("/product/categories/personal-care")}}" class="theme-btn icon-btn-one"><span>Shop Now</span></a>
         </div>
     </div>
 </section>
@@ -351,174 +352,6 @@
                     </div>
                 </div>
                 @endforeach
-                
-                {{-- <!-- Product Block --> 
-                <div class="product-block all mix bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/1.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Baby Products</span>
-                            <h4 class="name"><a href="shop-single.html">Turpis Faucibus Tempor</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix baby-prod bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/2.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Bath Preparations</span>
-                            <h4 class="name"><a href="shop-single.html">Vestibulum Interdum</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix baby-prod col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/3.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Baby Products</span>
-                            <h4 class="name"><a href="shop-single.html">Eleifend Fringilla</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix baby-prod col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/4.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Baby Products</span>
-                            <h4 class="name"><a href="shop-single.html">Tristique Senectus Et</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix fragrance hair-prep bath-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/5.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Hair Preparations</span>
-                            <h4 class="name"><a href="shop-single.html">Curabitur Sed Metus</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix eye-makeup hair-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/6.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Eye Makeup</span>
-                            <h4 class="name"><a href="shop-single.html">Venenatis Eu Eget</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix fragrance col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/7.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Fragrance</span>
-                            <h4 class="name"><a href="shop-single.html">Nulla Porta Urna</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Block --> 
-                <div class="product-block all mix eye-makeup hair-prep col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/products/8.png') }}" alt=""></figure>
-                            <div class="overlay-box">
-                                <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
-                                    <a href="shopping-cart.html"><span class="icon flaticon-shopping-cart"></span></a>
-                                    <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower-content clearfix">
-                            <span class="cat">Hair Preparations</span>
-                            <h4 class="name"><a href="shop-single.html">Desodorante Para Mujer</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
 
@@ -526,22 +359,22 @@
         <div class="banners-area row">
             <!-- Banner Box -->
             <div class="banner-box col-lg-8 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-1.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/oral-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-1.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-4 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/personal-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-3.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/health-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-3.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="shop-single.html"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-4.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/agri-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-4.png') }}" alt=""></a></figure>
             </div>
         </div>
     </div>
@@ -560,9 +393,9 @@
             <div class="content-box">
                 <div class="inner-box">
                     <div class="sec-title">
-                        <h2>Lorem ipsum dolor <br><span>consectetur</span><br> Sed non leo laore</h2>
-                        <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet nisl. Sed quis lorem condimentum, mattis nulla a, maximus diam. Phasellus non justo vitae est placerat dictum faucibus quis elit.</div>
-                        <a href="shop.html" class="theme-btn icon-btn-one"><span>Products</span></a>
+                        <h2>Look more Beautiful <br><span>Personal Care</span><br> With Ceyoune</h2>
+                        <div class="text"> Your skin deserves a routine as unique as you are. That’s why we’re always chatting with skin care experts and looking into the latest products, treatments and tips to help you create your perfect skin care routine.</div>
+                        <a href="{{url ("/product/categories/personal-care")}}" class="theme-btn icon-btn-one"><span>Products</span></a>
                     </div>
                 </div>
             </div>
@@ -572,9 +405,9 @@
             <div class="content-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-2.jpg') }});">
                 <div class="inner-box">
                     <div class="sec-title">
-                        <h2>Lorem ipsum dolor <br><span>consectetur</span><br> Sed non leo laore</h2>
-                        <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in aliquet nisl. Sed quis lorem condimentum, mattis nulla a, maximus diam. Phasellus non justo vitae est placerat dictum faucibus quis elit.</div>
-                        <a href="shop.html" class="theme-btn icon-btn-one"><span>Products</span></a>
+                        <h2>Stay Healthy With<br><span>Agri Care</span><br> Organic products</h2>
+                        <div class="text"> Farmers care about sustainability, regardless of label, not just because it is the right thing to do, but also because our livelihoods are dependent on the land, water, and air.You can keep cultivating the same piece of land for decades or centuries. </div>
+                        <a href="{{url ("/product/categories/agri-care")}}" class="theme-btn icon-btn-one"><span>Products</span></a>
                     </div>
                 </div>
             </div>
@@ -666,7 +499,7 @@
     <div class="auto-container">
         <div class="sec-title">
             <span class="title">Clients Love Us</span>
-            <h2>Our Testimonials</h2>
+            <h2>{!! trans('frontend.testimonials_label') !!}</h2>
         </div>
 
         <div class="row">

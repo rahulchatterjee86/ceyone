@@ -53,7 +53,7 @@
                                         </ul>
                                     </div>
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
-                                        <h3>Agri Care</h3>
+                                        <h3>Personal Care</h3>
                                         <ul>
                                             <li><a href="{{ url("/product/categories/personal-care") }}">Personal care</a></li>
                                         </ul>
@@ -190,7 +190,7 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" title=""><img src="{{ URL::asset('public/burst-beetee/images/logo-small.png') }}" alt="" title=""></a>
+                <a href="{{url("/")}}" title=""><img src="{{ URL::asset('public/burst-beetee/images/logo-small.png') }}" alt="" title=""></a>
             </div>
             <!--Right Col-->
             <div class="pull-right">
@@ -249,7 +249,7 @@
     <nav class="menu-box">
         <div class="mobile-upper">
             <div class="close-btn"><span class="icon flaticon-add"></span></div>
-            <div class="logo"><img src="{{ URL::asset('public/burst-beetee/images/logo-small.png') }}" alt=""></div>
+            <div class="logo"><img src="{{ URL::asset('public/burst-beetee/images/logo.png') }}" alt=""></div>
         </div>
 
         <!-- Menu Outer -->
