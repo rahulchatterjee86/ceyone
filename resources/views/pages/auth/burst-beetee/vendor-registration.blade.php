@@ -1,5 +1,5 @@
 @extends('layouts.frontend.master')
-@section('title', trans('frontend.frontend_user_registration_title') .' - '. get_site_title())
+@section('title', trans('frontend.frontend_vendor_registration_title') .' - '. get_site_title())
 @section('content')
 
 <!--Page Title-->
@@ -40,7 +40,7 @@
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <label>First Name</label>
                                         <input type="text" placeholder="First Name" class="" value="{{ old('vendor_reg_display_name') }}" id="vendor_reg_display_name" name="vendor_reg_display_name">
-                                        <span class="fa fa-user form-control-feedback"></span>
+                                        <span class="icon flaticon-email-4"></span>
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
@@ -52,19 +52,19 @@
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                         <label>Email Address</label>
                                         <input type="email" placeholder="{{ ucfirst( trans('frontend.email') ) }}" class="" id="vendor_reg_email_id" value="{{ old('vendor_reg_email_id') }}" name="vendor_reg_email_id">
-          <span class="fa fa-envelope form-control-feedback"></span>
+                                        <span class="icon flaticon-email-4"></span>
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <label>Password</label>
                                         <input type="password" placeholder="{{ ucfirst(trans('frontend.password')) }}" class="" id="vendor_reg_password" name="vendor_reg_password">
-              <span class="fa fa-lock form-control-feedback"></span>
+                                        <span class="icon flaticon-email-4"></span>
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <label>Confirm Password</label>
                                         <input type="password" placeholder="{{ trans('frontend.retype_password') }}" class="" id="vendor_reg_password_confirmation" name="vendor_reg_password_confirmation">
-                                        <span class="fa fa-lock form-control-feedback"></span>
+                                        <span class="icon flaticon-email-4"></span>
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
