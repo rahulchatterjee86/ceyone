@@ -94,7 +94,7 @@ class UserAccountManageController extends Controller
     
     $data['login_user_details'] =  get_current_frontend_user_info();
   
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
   
   /**
@@ -141,7 +141,7 @@ class UserAccountManageController extends Controller
     
     $data['login_user_details'] =  get_current_frontend_user_info();
     
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
 
 
@@ -165,7 +165,8 @@ class UserAccountManageController extends Controller
     
     $data['login_user_details'] =  get_current_frontend_user_info();
     
-    return view('pages.frontend.user-account.my-points', $data);
+    // return view('pages.frontend.user-account.burst-beetee.my-points', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
 
 
@@ -194,7 +195,8 @@ class UserAccountManageController extends Controller
 
     $data['login_user_details'] =  get_current_frontend_user_info();
     
-    return view('pages.frontend.user-account.my-offers', $data);
+    // return view('pages.frontend.user-account.burst-beetee.my-offers', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
 
 
@@ -271,7 +273,7 @@ class UserAccountManageController extends Controller
     $data['login_user_coupon_data'] =  $coupon_data;
     $data['login_user_details'] =  get_current_frontend_user_info();
     
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
   public function userAccountaffiliationPoint(){
     $data = array();
@@ -279,7 +281,8 @@ class UserAccountManageController extends Controller
     $data['affiliation_products'] = Product::where('status',1)->whereNotNull('appliation_point')->get();
   
     $data['login_user_details'] =  get_current_frontend_user_info();
-    return view('pages.frontend.user-account.affiliation_point',$data);
+    // return view('pages.frontend.user-account.burst-beetee.affiliation_point',$data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages',$data);
   }
   public function affProPoints(){
     $data = array();
@@ -287,7 +290,8 @@ class UserAccountManageController extends Controller
     $data['login_user_details'] =  get_current_frontend_user_info();
     $data['aff_products'] = Affiliation::with('products')->where('user_id',Session::get('shopist_frontend_user_id'))->get();
    
-    return view('pages.frontend.user-account.aff_pro_point',$data);
+    // return view('pages.frontend.user-account.burst-beetee.aff_pro_point',$data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages',$data);
   }
   
   /**
@@ -346,7 +350,7 @@ class UserAccountManageController extends Controller
     }
     
     $data['login_user_details'] =  get_current_frontend_user_info();
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
   
   /**
@@ -364,7 +368,7 @@ class UserAccountManageController extends Controller
     $data['user_details'] = get_user_details( $get_current_user_id['user_id'] );
     $data['login_user_details'] =  get_current_frontend_user_info();
     
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
   
   /**
@@ -390,7 +394,7 @@ class UserAccountManageController extends Controller
       $data['order_details_by_order_id'] = array();
     }
    
-    return view('pages.frontend.user-account.user-account-pages', $data);
+    return view('pages.frontend.user-account.burst-beetee.user-account-pages', $data);
   }
 
 
