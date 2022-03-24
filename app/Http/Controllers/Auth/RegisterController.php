@@ -99,7 +99,7 @@ class RegisterController extends Controller
     $get_data['is_enable_recaptcha'] = $recaptchaData['enable_recaptcha_for_user_registration'];
     $get_data['settings_data'] = global_settings_data();
     
-    return view('pages.auth.user-registration')->with($get_data);
+    return view('pages.auth.burst-beetee.user-registration')->with($get_data);
   }
   
   /**
@@ -125,7 +125,7 @@ class RegisterController extends Controller
         $get_data['is_enable_recaptcha'] = false;
     }
     
-    return view('pages.auth.vendor-registration')->with($get_data);
+    return view('pages.auth.burst-beetee.vendor-registration')->with($get_data);
   }
   
   /**
