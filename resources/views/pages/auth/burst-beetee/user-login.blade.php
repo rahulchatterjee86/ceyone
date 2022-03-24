@@ -2,7 +2,7 @@
 @section('title', trans('frontend.frontend_user_login_title') .' - '. get_site_title())
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/background/5.jpg);">
+<section class="page-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
     <div class="auto-container">
         <div class="content-box">
             <h1>Login - Register</h1>
