@@ -40,19 +40,22 @@
             <!-- Image Column -->
             <div class="image-column col-lg-5 col-md-12 col-sm-12">
                 <div class="inner-column">
-                    <div class="caption-box">
-                        
-                        <?php if ($page_data->post_subtitle) { ?>
-                            {!! string_decode($page_data->post_subtitle) !!}  
-                        <?php }
-                        else { ?>
-                            The aim, to touch the success 
-                        <?php } ?>
 
+                    <?php if ($page_data->post_subtitle) { ?>
+                        <div class="caption-box">
+                            {!! string_decode($page_data->post_subtitle) !!}  
                         </div>
+                    <?php } ?>
+
+                    
                     <div class="image-box">
-                        <figure class="image"><img src="{{url ("$page_data->post_image1")}}" alt=""></figure>
-                        <figure class="bb-image"><img src="{{url ("/public/burst-beetee/images/resource/bb-img.png")}} " alt=""></figure>
+                        <figure class="image">
+                            <?php if ($page_data->post_subtitle) { ?>
+                                <img src="{{url ("$page_data->post_image1")}}" alt="">
+                            <?php } else {?>
+                                <img src="{{url ("/public/burst-beetee/images/resource/page-default.jpg")}}" alt="">
+                            <?php } ?>
+                        </figure>
                     </div>
                 </div>
             </div>

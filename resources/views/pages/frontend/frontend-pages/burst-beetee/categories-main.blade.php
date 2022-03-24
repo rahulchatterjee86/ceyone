@@ -5,10 +5,10 @@
 <section class="page-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
     <div class="auto-container">
         <div class="content-box">
-            <h1>Shop Left Sidebar</h1>
+            <h1>Products</h1>
             <ul class="bread-crumb clearfix">
                 <li><a href="{{ route('shop-page') }}">Products</a></li>
-                <li>Shop Grid</li>
+                <li>Products</li>
             </ul>
         </div>
     </div>
@@ -156,7 +156,9 @@
 
                     <form action="{{ $product_by_cat_id['action_url'] }}" method="get">
                         <div class="price-filter">
-                            <h2>{{ trans('frontend.price_range_label') }} <span class="responsive-accordian"></span></h2>
+                            <div class="sidebar-title">
+                                <h3>{{ trans('frontend.price_range_label') }} <span class="responsive-accordian"></span></h3>
+                            </div>
                             <div class="price-slider-option">
                                 <input type="text" class="span2" value="" data-slider-min="{{ get_appearance_settings()['general']['filter_price_min'] }}" data-slider-max="{{ get_appearance_settings()['general']['filter_price_max'] }}" data-slider-step="5" data-slider-value="[{{ $product_by_cat_id['min_price'] }},{{ $product_by_cat_id['max_price'] }}]" id="price_range"><br />
                                 <b>{!! price_html(get_appearance_settings()['general']['filter_price_min'], get_frontend_selected_currency()) !!}</b> <b class="pull-right">{!! price_html(get_appearance_settings()['general']['filter_price_max'], get_frontend_selected_currency()) !!}</b>

@@ -1,6 +1,8 @@
 @section('categories-content')
 <div class="product-categories-accordian">
-  <h2>{{ trans('frontend.category_label') }} <span class="responsive-accordian"></span></h2>
+  <div class="sidebar-title">
+    <h3>{{ trans('frontend.category_label') }} <span class="responsive-accordian"></span></h3>
+  </div>
   
   @if (count($productCategoriesTree) > 0)
   <div class="category">
@@ -32,7 +34,14 @@
             </div>
           </div>
           @else
-          <a href="{{ route('categories-page', $data['slug']) }}"> {!! $data['name'] !!} </a>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <i class="fa fa-angle-double-right"></i> &nbsp;
+                <a href="{{ route('categories-page', $data['slug']) }}"> {!! $data['name'] !!} </a>
+              </h4>
+            </div>
+          </div>
           @endif
         </li>
       @endforeach

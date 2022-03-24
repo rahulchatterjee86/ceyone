@@ -1464,7 +1464,7 @@ form .response .text-info{
 
 .main-menu .navigation > li .mega-menu-bar h3{
   position:relative;
-  font-size:16px;
+  font-size:14px;
   color:#000000;
   font-weight:500;
   padding-bottom:15px;
@@ -3158,14 +3158,15 @@ form .response .text-info{
 }
 
 .about-section .image-column .image-box{
+  margin-top:20%;
   position: relative;
   border: 2px solid #ffa38d;
-  padding-bottom: 65px;
+  padding-bottom: 20px;
 }
 
 .about-section .image-column .image{
   position: relative;
-  padding: 50px 50px 0;
+  padding: 20px 20px 0;
   margin-bottom: 0;
 }
 
@@ -3179,7 +3180,7 @@ form .response .text-info{
 .about-section .image-column .caption-box{
   position: absolute;
   left: -195px;
-  top: 30px;
+  top: -20%;
   padding: 30px 40px;
   font-size: 28px;
   line-height: 30px;
@@ -3689,7 +3690,7 @@ form .response .text-info{
   justify-content: space-between;
   align-items: center;
   border: 2px solid #fedbd2;
-  padding: 15px 20px;
+  padding: 0 20px 5px;
   margin-bottom: 30px;
 }
 
@@ -6014,6 +6015,11 @@ a.ui-button:active, .ui-button:active,
   padding-right: 30px;
 }
 
+
+.team-block .inner-box-gallery{
+  position: relative;
+}
+
 .team-block .inner-box:before{
   position: absolute;
   right: 20px;
@@ -6060,11 +6066,10 @@ a.ui-button:active, .ui-button:active,
 
 
 .team-block .name{
-  position: absolute;
   left: 0;
   top: 0;
   padding: 20px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.2em;
   color: #620d98;
   font-weight: 700;
@@ -6075,16 +6080,18 @@ a.ui-button:active, .ui-button:active,
   color: #620d98;
 }
 
+.designation-code {padding-left: 20px;}
+
 .team-block .designation {
-    position: absolute;
-    right: 2px;
-    top: 27px;
+    /* position: absolute; */
+    /* right: 2px; */
+    /* top: 27px; */
     color: #000000;
     font-size: 15px;
     line-height: 30px;
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
     transform-origin: bottom;
 }
 

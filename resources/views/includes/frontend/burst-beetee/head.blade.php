@@ -35,5 +35,9 @@ span.cart-number {
     top: -21px;
     left: 24%;
 }
+span.active {
+    color: #007bff;
+}
+
 </style>
 @yield('styles')

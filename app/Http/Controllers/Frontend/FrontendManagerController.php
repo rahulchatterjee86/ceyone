@@ -197,7 +197,7 @@ class FrontendManagerController extends Controller
         $data['testimonials_data'] = array();
       }
 
-      return view('pages.frontend.frontend-pages.testimonial-details', $data);
+      return view('pages.frontend.frontend-pages.burst-beetee.testimonial-details', $data);
     }
     else{
       return view('errors.no_data');

@@ -23,10 +23,19 @@
                     @foreach($testimonials_data as $row)
                     <!-- News Block -->
                     <div class="news-block">
-                        <div class="inner-box">
-                            <div class="lower-content">
+                        <div class="inner-box row">
+                            <div class="lower-content col-xl-2 col-lg-2 col-md-2 col-sm-12"> 
+                                <center>
+                                @if(!empty($row->testimonial_image_url))
+                                    <img src="{{ get_image_url($row->testimonial_image_url) }}" alt="">
+                                @else
+                                    <img src="{{ default_placeholder_img_src() }}" alt="">
+                                @endif</center>
+                            </div>
+
+                            <div class="lower-content col-xl-10 col-lg-10 col-md-10 col-sm-12">
                                 <span class="cat">{!! $row->testimonial_client_name !!}</span>
-                                <h3><a href="blog-single.html">"{!! $row->post_title !!}"</a></h3>
+                                <h3><a href="{{ route('testimonial-single-page', $row->post_slug)}}">"{!! $row->post_title !!}"</a></h3>
                         
                                 <div class="text">{!! get_limit_string(string_decode($row->post_content), 200) !!}</div>
                                 <a href="{{ route('testimonial-single-page', $row->post_slug)}}" class="read-more">View More <span class="fa fa-angle-right"></span></a>

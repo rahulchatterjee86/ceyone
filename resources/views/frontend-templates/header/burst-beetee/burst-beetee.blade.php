@@ -31,7 +31,7 @@
             <nav class="main-menu navbar-expand-md">
                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                     <ul class="navigation clearfix">
-                        <li class="dropdown has-mega-menu"><a href="#">Shop</a>
+                        <li class="dropdown has-mega-menu"><a href="{{ url("/shop") }}">Shop</a>
                             <div class="mega-menu">
                                 <div class="mega-menu-bar row clearfix">
                                     <div class="column col-lg-3 col-md-3 col-sm-12">
@@ -161,8 +161,8 @@
                 <ul class="options-list">
                     <li><button class="search-btn"><span class="icon flaticon-loupe"></span></button></li>
                     <li><a href="{{ route('user-account-page') }}"><span class="icon flaticon-user-1"></span></a></li>
-                    <li><a href="#"><span class="icon flaticon-compare"></span></a></li>
-                    <li><a href="wishlist.html"><span class="icon flaticon-heart"></span></a></li>
+{{--                 <li><a href="#"><span class="icon flaticon-compare"></span></a></li>
+--}}                 <li><a href="#"><span class="icon flaticon-heart"></span></a></li>
                     <li class="cart-icon"><button type="button" class="cart-btn"><span class="cart-number">{{ Cart::count() }}</span><span class="icon flaticon-shopping-cart"></span></button></li>
                 </ul>
             </div>

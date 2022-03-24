@@ -1,10 +1,10 @@
 <section class="page-title" style="background-image:url({{ URL::asset('public/burst-beetee/images/background/5.jpg') }});">
     <div class="auto-container">
         <div class="content-box">
-            <h1>Shop Left Sidebar</h1>
+            <h1>Ceyone Store</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{{ route('shop-page') }}">Products</a></li>
-                <li>Shop Grid</li>
+                <li><a href="{{ route('shop-page') }}">Home</a></li>
+                <li>Shop</li>
             </ul>
         </div>
     </div>
@@ -17,69 +17,46 @@
         <div class="shop-upper-box">
             <div class="items-label">Showing Result of “{{ count($all_products_details['products']) }}” Products</div>
             <div class="sort-by">
-                {{-- <select class="custom-select-box" id="grid-view">
-                    <option>3 Column</option>
-                    <option>4 column</option>
-                    <option>List view</option>
-                    <option>Grid view</option>
-                </select> --}}
-
-                {{-- <select class="custom-select-box" id="latest-item">
-                    <option>Latest Items</option>
-                    <option>Oldest Items</option>
-                    <option>Price Lowest</option>
-                    <option>Price Highest</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
-                </select> --}}
-
-                {{-- <select class="custom-select-box" id="sort-by-price">
-                    <option>Sort by Price</option>
-                    <option>Price: Lowest First</option>
-                    <option>Price: Highest First</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
-                </select> --}}
 
                 <span>{{ trans('frontend.sort_filter_label') }} </span>
                 <select class="form-control select2 sort-by-filter" style="width: 50%;">
-                    @if($product_by_cat_id['sort_by'] == 'all')
+                    @if($all_products_details['sort_by'] == 'all')
                         <option selected="selected" value="all">{{ trans('frontend.sort_filter_all_label') }}</option>
                     @else
                         <option value="all">{{ trans('frontend.sort_filter_all_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'alpaz')
+                    @if($all_products_details['sort_by'] == 'alpaz')
                         <option selected="selected" value="alpaz">{{ trans('frontend.sort_filter_alpaz_label') }}</option>
                     @else
                         <option value="alpaz">{{ trans('frontend.sort_filter_alpaz_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'alpza')
+                    @if($all_products_details['sort_by'] == 'alpza')
                         <option selected="selected" value="alpza">{{ trans('frontend.sort_filter_alpza_label') }}</option>
                     @else
                         <option value="alpza">{{ trans('frontend.sort_filter_alpza_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'low-high')
+                    @if($all_products_details['sort_by'] == 'low-high')
                         <option selected="selected" value="low-high">{{ trans('frontend.sort_filter_low_high_label') }}</option>
                     @else
                         <option value="low-high">{{ trans('frontend.sort_filter_low_high_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'high-low')
+                    @if($all_products_details['sort_by'] == 'high-low')
                         <option selected="selected" value="high-low">{{ trans('frontend.sort_filter_high_low_label') }}</option>
                     @else
                         <option value="high-low">{{ trans('frontend.sort_filter_high_low_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'old-new')
+                    @if($all_products_details['sort_by'] == 'old-new')
                         <option selected="selected" value="old-new">{{ trans('frontend.sort_filter_old_new_label') }}</option>
                     @else
                         <option value="old-new">{{ trans('frontend.sort_filter_old_new_label') }}</option>
                     @endif
 
-                    @if($product_by_cat_id['sort_by'] == 'new-old')
+                    @if($all_products_details['sort_by'] == 'new-old')
                         <option selected="selected" value="new-old">{{ trans('frontend.sort_filter_new_old_label') }}</option>
                     @else
                         <option value="new-old">{{ trans('frontend.sort_filter_new_old_label') }}</option>
@@ -148,11 +125,13 @@
                         @yield('categories-content')
                     </div>
 
-                    <div class="filter-panel">
-                        <div class="filter-option-title">{{ trans('frontend.filter_options_label') }}</div>
-                        <form action="{{ $all_products_details['action_url'] }}" method="get">
+                    <div class="filter-panel"><br>
+{{--                         <div class="filter-option-title">{{ trans('frontend.filter_options_label') }}</div>
+ --}}                        <form action="{{ $all_products_details['action_url'] }}" method="get">
                             <div class="price-filter">
-                                <h2>{{ trans('frontend.price_range_label') }} <span class="responsive-accordian"></span></h2>
+                                <div class="sidebar-title">
+                                    <h3>{{ trans('frontend.price_range_label') }} <span class="responsive-accordian"></span></h3>
+                                </div>
                                 <div class="price-slider-option">
                                     <input type="text" class="span2" value="" data-slider-min="{{ get_appearance_settings()['general']['filter_price_min'] }}" data-slider-max="{{ get_appearance_settings()['general']['filter_price_max'] }}" data-slider-step="5" data-slider-value="[{{ $all_products_details['min_price'] }},{{ $all_products_details['max_price'] }}]" id="price_range"><br />
                                     <b>{!! price_html(get_appearance_settings()['general']['filter_price_min'], get_frontend_selected_currency()) !!}</b> <b class="pull-right">{!! price_html(get_appearance_settings()['general']['filter_price_max'], get_frontend_selected_currency()) !!}</b>
