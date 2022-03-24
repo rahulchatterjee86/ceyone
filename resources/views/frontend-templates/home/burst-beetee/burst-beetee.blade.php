@@ -425,70 +425,36 @@
 <section class="news-section">
     <div class="auto-container">
         <div class="sec-title text-center">
-            <span class="title">News Update</span>
-            <h2>Our Latest Blogs</h2>
+            <span class="title">Recent Updates</span>
+            <h2>Our Latest Events</h2>
         </div>
-
+        <?php $news_categories = $categoriesTree[1]['children'];?>
         <div class="row">
-            <!-- News Block -->
-            <div class="news-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-1.jpg') }}" alt="" /></figure>
-                        <a href="blog-single.html" class="overlay-link"></a>
-                    </div>
-                    <div class="lower-content">
-                        <span class="cat">Information</span>
-                        <h3><a href="blog-single.html">Organic and Natural What’s the Difference?</a></h3>
-                        <ul class="post-meta">
-                            <li><a href="#">26 August 2020</a></li>
-                            <li><a href="#">By Thomas Jones</a></li>
-                        </ul>
-                        <div class="text">Sed venenatis ut sem id molestie. Pellentes que habitant morbi tristique senectus et ne tus et malesuada. </div>
-                        <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
-                    </div>
-                </div>
-            </div>
+            <?php $i = 0; ?>
+            @foreach($news_categories as $key => $row)
 
+            <?php if($i >= 3) { break; }else{ ?>
             <!-- News Block -->
             <div class="news-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-2.jpg') }}" alt="" /></figure>
+                        <figure class="image"><img src="{{ get_image_url($row['img_url']) }}" alt="" /></figure>
                         <a href="blog-single.html" class="overlay-link"></a>
                     </div>
                     <div class="lower-content">
-                        <span class="cat">Information</span>
-                        <h3><a href="blog-single.html">Most Popular Questions Eyelash Extension?</a></h3>
+                        <h3><a href="<?php echo url("/categories/".$row['slug']);?>">{!! $row['name'] !!}</a></h3>
                         <ul class="post-meta">
-                            <li><a href="#">26 August 2020</a></li>
-                            <li><a href="#">By Thomas Jones</a></li>
+                            <li><a href="#">{!! $row['created_at']!!}</a></li>
                         </ul>
-                        <div class="text">Sed venenatis ut sem id molestie. Pellentes que habitant morbi tristique senectus et ne tus et malesuada. </div>
-                        <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
+                        <a href="<?php echo url("/categories/".$row['slug']);?>" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
                     </div>
                 </div>
             </div>
+            <?php $i++; } ?>
+            @endforeach
 
-            <!-- News Block -->
-            <div class="news-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/news-3.jpg') }}" alt="" /></figure>
-                        <a href="blog-single.html" class="overlay-link"></a>
-                    </div>
-                    <div class="lower-content">
-                        <span class="cat">Information</span>
-                        <h3><a href="blog-single.html">What to Consider When Eyelash Extensions?</a></h3>
-                        <ul class="post-meta">
-                            <li><a href="#">26 August 2020</a></li>
-                            <li><a href="#">By Thomas Jones</a></li>
-                        </ul>
-                        <div class="text">Sed venenatis ut sem id molestie. Pellentes que habitant morbi tristique senectus et ne tus et malesuada. </div>
-                        <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
-                    </div>
-                </div>
-            </div>
+            <!-- News Block End-->
+   
         </div>
     </div>
 </section>
@@ -507,37 +473,30 @@
                 <div class="carousel-outer">
                     <!-- Testimonial Carousel -->
                     <div class="testimonial-carousel owl-carousel owl-theme">
+                        @foreach($testimonials_data as $row)
                         <!-- Testimonial Block -->
                         <div class="testimonial-block">
-                            <figure class="image-box"><img src="{{ URL::asset('public/burst-beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
+                            <figure class="image-box">
+                                @if(!empty($row->testimonial_image_url))
+                                    <img src="{{ get_image_url($row->testimonial_image_url) }}" alt="">
+                                @else
+                                    <img src="{{ default_placeholder_img_src() }}" alt="">
+                                @endif
+                            </figure>
                             <!-- Text Box -->
                             <div class="text-box">
                                 <div class="inner-box">
+                                    
                                     <span class="icon flaticon-quote-1"></span>
-                                    <p>"Maecenas tellus magna, gravida a porttitor a, ultrices eget ipsum. Nulla porta urna in tortor volutpat aliquet. Quisque eget massa interdum, commodo nisl eget, fringilla ligula "</p>
+                                    <p>{!! get_limit_string( string_decode($row->post_content), 200 ) !!}</p>
                                     <div class="info-box">
-                                        <h5 class="name">John Doe</h5>
-                                        <span class="designation">Designer</span>
+                                        <h5 class="name">{!! $row->testimonial_client_name !!}</h5>
+                                        <span class="designation">Happy Customer</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial Block -->
-                        <div class="testimonial-block">
-                            <figure class="image-box"><img src="{{ URL::asset('public/burst-beetee/images/resource/avatar-1.jpg') }}" alt=""></figure>
-                            <!-- Text Box -->
-                            <div class="text-box">
-                                <div class="inner-box">
-                                    <span class="icon flaticon-quote-1"></span>
-                                    <p>"Maecenas tellus magna, gravida a porttitor a, ultrices eget ipsum. Nulla porta urna in tortor volutpat aliquet. Quisque eget massa interdum, commodo nisl eget, fringilla ligula "</p>
-                                    <div class="info-box">
-                                        <h5 class="name">John Doe</h5>
-                                        <span class="designation">Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

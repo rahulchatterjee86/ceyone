@@ -225,7 +225,7 @@ class FrontendManagerController extends Controller
 			$data['testimonials_data'] = array();
 		}
 
-      	return view('pages.frontend.frontend-pages.testimonial-list', $data);
+      	return view('pages.frontend.frontend-pages.burst-beetee.testimonial-list', $data);
   }
 
   /**
@@ -250,7 +250,7 @@ class FrontendManagerController extends Controller
 			$data['download_data'] = array();
 		}
 
-      	return view('pages.frontend.frontend-pages.download-list', $data);
+      	return view('pages.frontend.frontend-pages.burst-beetee.download-list', $data);
   }
 
   /**
@@ -969,7 +969,7 @@ class FrontendManagerController extends Controller
     $data['categoriesTree']  =   $this->product->get_categories(0, 'blog_cat');
     $data['advanced_data']   =   $this->CMS->get_blog_advanced_data();
 
-    return view('pages.frontend.frontend-pages.blogs-main', $data);
+    return view('pages.frontend.frontend-pages.burst-beetee.blogs-main', $data);
   }
 
   /**
