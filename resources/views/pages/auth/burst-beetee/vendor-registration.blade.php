@@ -3,7 +3,7 @@
 @section('content')
 
 <!--Page Title-->
-<section class="page-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
+<section class="page-title post-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
     <div class="auto-container">
         <div class="content-box">
             <h1>Distributer Registration</h1>

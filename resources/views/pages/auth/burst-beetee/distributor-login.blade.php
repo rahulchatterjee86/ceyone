@@ -2,7 +2,7 @@
 @section('title', 'Distributor Login' .' - '. get_site_title())
 @section('content')
 <!--Page Title-->
-<section class="page-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
+<section class="page-title post-title" style="background-image:url({{url("/public/burst-beetee/images/background/5.jpg")}});">
   <div class="auto-container">
       <div class="content-box">
           <h1>Login - Register</h1>
@@ -56,7 +56,7 @@
 
                                   <div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
                                       <button type="submit" class="theme-btn icon-btn-one small"><span>Login</span></button>
-                                      <div class="rigester-now">Not Member? <a href="{{ route('user-registration-page') }}">Register Now</a></div>
+                                      <div class="rigester-now">Not Member? <a href="{{ route('vendor-registration-page') }}">Register Now</a></div>
                                   </div>
                               </div>
                           </form>
