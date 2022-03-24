@@ -151,6 +151,16 @@
                                 <li><a href="{{url("/downloads") }}">Download</a></li>
                             </ul>
                         </li>
+                        @if(session()->has('shopist_frontend_user_id'))
+                            <li class="dropdown"><a href="{{ route('user-account-page') }}">My Account</a></li>
+                        @else
+                        <li class="dropdown"><a href="{{url("#") }}">My Account</a>
+                            <ul> 
+                                <li><a href="{{url("/user/login") }}">User Login</a></li>
+                                <li><a href="{{url("/distributor/login") }}">Distributer Login</a></li>
+                            </ul>
+                        </li>
+                        @endif
                     </ul>
                 </div>
             </nav>
