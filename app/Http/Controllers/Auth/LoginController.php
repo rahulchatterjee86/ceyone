@@ -127,7 +127,7 @@ class LoginController extends Controller
     $data['frontend_login_data'] =  $login_data;
     $data['settings_data'] =  global_settings_data();
     
-    return view('pages.auth.user-login')->with( $data );
+    return view('pages.auth.burst-beetee.user-login')->with( $data );
   }
   
   
@@ -162,7 +162,7 @@ class LoginController extends Controller
     $data['frontend_login_data'] =  $login_data;
     $data['settings_data'] =  global_settings_data();
     
-    return view('pages.auth.distributor-login')->with( $data );
+    return view('pages.auth.burst-beetee.distributor-login')->with( $data );
   }
   
   
