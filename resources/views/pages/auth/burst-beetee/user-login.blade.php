@@ -57,6 +57,7 @@
                                     <div class="form-group text-center col-lg-12 col-md-12 col-sm-12">
                                         <button type="submit" class="theme-btn icon-btn-one small"><span>Login</span></button>
                                         <div class="rigester-now">Not Member? <a href="{{ route('user-registration-page') }}">Register Now</a></div>
+                                        <div class="rigester-now">Are you a distributor? <a href="{{ route('distributor-login-page') }}">Login Here</a></div>
                                     </div>
                                 </div>
                             </form>

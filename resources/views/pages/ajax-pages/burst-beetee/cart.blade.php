@@ -23,11 +23,11 @@
 
         <div class="cart-upper row">
             <div class="column col-lg-6 col-md-8">
-                <button class="theme-btn btn-style-one">Remove Selected</button>
-                <a href="{{ route('checkout-page') }}" class="theme-btn btn-style-one">Checkout Selected</a>
-            </div>
+                {{-- <button class="theme-btn btn-style-one">Remove Selected</button> --}}
+                {{-- <a href="{{ route('checkout-page') }}" class="theme-btn btn-style-one">Checkout Selected</a> --}}
+            </div> 
             <div class="column text-right col-lg-6 col-md-4">
-                <a href="shop.html" class="theme-btn btn-style-one">Continue Shopping</a>
+                <a href="{{ route('shop-page') }}" class="theme-btn btn-style-one">Continue Shopping</a>
             </div>
         </div>
         <!--Cart Outer-->
