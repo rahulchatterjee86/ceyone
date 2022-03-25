@@ -39,7 +39,7 @@
                         </div>
                         @endif
                     </div>
-                    @php dump($comments_rating_details) @endphp
+                    {{-- @php dump($comments_rating_details) @endphp --}}
                     <div class="info-column col-lg-6 col-md-12">
                         <div class="details-header">
                             <h4>{{ $single_product_details['post_title'] }}</h4>
@@ -60,12 +60,16 @@
                                     <span class="solid-price">{!! get_product_variations_min_to_max_price_html($currency_symbol, $single_product_details['id']) !!} </span>
                                 @endif
                             </div>
+                            @php
+                            $stars = round($comments_rating_details['percentage'] * 0.01 * 5);
+                            @endphp
                             <div class="rating">
+                                @for($i = 0; $i < $stars; $i++)
                                 <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                @endfor
+                                @for($i = 0; $i < 5 - $stars; $i++)
                                 <span class="far fa-star"></span>
+                                @endfor
                             </div>
                             <div class="reviews">{{ count($vendor_reviews_rating_details) }} Reviews <a href="#">( Read reviews )</a></div>
                         </div>
@@ -116,13 +120,15 @@
                             <button type="button" class="theme-btn btn-style-one product-wishlist" data-id="{{ $single_product_details['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="flaticon-heart"></span></button>
                         </div>
 
-                        {{-- <ul class="product-meta">
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                        <ul class="product-meta">
                             <li><span class="title">Brand:</span> <a href="#">Bottled Heaven</a></li>
                             <li><span class="title">SKU:</span> <a href="#">6890</a></li>
                             <li><span class="title">Product Type:</span> <a href="#">Women</a></li>
                             <li><span class="title">Product ID:</span> <a href="#">346</a></li>
                             <li><span class="title">Availability:</span> <a href="#">6 In Stock</a></li>
-                        </ul> --}}
+                        </ul>
                     </div>
                 </div>
             </div>
