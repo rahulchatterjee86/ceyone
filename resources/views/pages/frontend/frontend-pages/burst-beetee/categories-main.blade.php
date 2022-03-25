@@ -96,7 +96,6 @@
             <!--Content Side-->
             <div class="content-side col-xl-9 col-lg-8 col-md-12 col-sm-12 order-2">
                 <div class="row">
-                    {{dd($product_by_cat_id)}}
                     @foreach($product_by_cat_id['products'] as $products)
                     <!-- Product Block --> 
                     <div class="product-block col-lg-4 col-md-6 col-sm-12">

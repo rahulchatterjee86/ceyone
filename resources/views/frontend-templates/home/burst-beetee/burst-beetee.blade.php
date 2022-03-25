@@ -324,29 +324,29 @@
                 </ul>
             </div>
             <div class="filter-list row">
-                @foreach($advancedData['latest_items'] as $key => $features_product)
+                @foreach($advancedData['latest_items'] as $key => $latest_product)
                 <!-- Product Block --> 
-                <div class="product-block all mix {{ Str::kebab($features_product->categories) }} col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="product-block all mix {{ Str::kebab($latest_product->categories) }} col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">                            
-                            @if(!empty($features_product->image_url))
-                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ get_image_url( $features_product->image_url ) }}" alt="{{ basename( get_image_url( $features_product->image_url ) ) }}" /></a></figure>
+                            @if(!empty($latest_product->image_url))
+                            <figure class="image"><a href ="{{ route('details-page', $latest_product->slug) }}"><img class="d-block" src="{{ get_image_url( $latest_product->image_url ) }}" alt="{{ basename( get_image_url( $latest_product->image_url ) ) }}" /></a></figure>
                             @else
-                            <figure class="image"><a href ="{{ route('details-page', $features_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a></figure>
+                            <figure class="image"><a href ="{{ route('details-page', $latest_product->slug) }}"><img class="d-block" src="{{ default_placeholder_img_src() }}" alt="" /></a></figure>
                             @endif
                             <div class="overlay-box">
                                 <div class="btn-box">
-                                    <a href="" class="product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
+                                    <a href="" class="product-wishlist" data-id="{{ $latest_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
                                     
-                                    <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><span class="icon flaticon-shopping-cart"></span></a>
+                                    <a href="" data-id="{{ $latest_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><span class="icon flaticon-shopping-cart"></span></a>
                                     {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                 </div>
                             </div>
                         </div>
                         <div class="lower-content clearfix">
-                            <span class="cat">{!! $features_product->categories !!}</span>
-                            <h4 class="name"><a href ="{{ route('details-page', $features_product->slug) }}">{!! $features_product->title !!}</a></h4>
-                            <span class="price"><del>$30.00</del> $24.00</span>
+                            <span class="cat">{!! $latest_product->categories !!}</span>
+                            <h4 class="name"><a href ="{{ route('details-page', $latest_product->slug) }}">{!! $latest_product->title !!}</a></h4>
+                            <span class="price">{!! price_html( get_product_price_html_by_filter(get_role_based_price_by_product_id($latest_product->id, $latest_product->price)), $selected_currency) !!}</span>
                         </div>
                     </div>
                 </div>

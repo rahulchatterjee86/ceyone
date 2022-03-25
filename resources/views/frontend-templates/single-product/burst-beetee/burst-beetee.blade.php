@@ -39,6 +39,7 @@
                         </div>
                         @endif
                     </div>
+                    @php dump($comments_rating_details) @endphp
                     <div class="info-column col-lg-6 col-md-12">
                         <div class="details-header">
                             <h4>{{ $single_product_details['post_title'] }}</h4>
@@ -66,10 +67,10 @@
                                 <span class="fa fa-star"></span>
                                 <span class="far fa-star"></span>
                             </div>
-                            <div class="reviews">3 Reviews <a href="#">( Read reviews )</a></div>
+                            <div class="reviews">{{ count($vendor_reviews_rating_details) }} Reviews <a href="#">( Read reviews )</a></div>
                         </div>
 
-                        <!-- Color Option -->
+                        {{-- <!-- Color Option -->
                         <div class="product-options color-option">
                             <span class="title">Select Color:</span>
                             <ul class="color-list">
@@ -108,20 +109,20 @@
                             <input type="hidden" id="affiliation_id" value="{{$affiliation_id??''}}" >
                             <input type="hidden" name="available_stock_val" id="available_stock_val" value="{{ $single_product_details['post_stock_qty'] }}">
                             <input type="hidden" name="backorder_val" id="backorder_val" value="{{ $single_product_details['_product_manage_stock_back_to_order'] }}">
-                        </div>
+                        </div> --}}
 
                         <div class="btns-box">
                             <button type="button" class="theme-btn btn-style-one add-to-cart add-to-cart-bg" data-id="{{ $single_product_details['id'] }}"><span class="flaticon-shopping-cart"></span> Add To Cart</button>
                             <button type="button" class="theme-btn btn-style-one product-wishlist" data-id="{{ $single_product_details['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="flaticon-heart"></span></button>
                         </div>
 
-                        <ul class="product-meta">
+                        {{-- <ul class="product-meta">
                             <li><span class="title">Brand:</span> <a href="#">Bottled Heaven</a></li>
                             <li><span class="title">SKU:</span> <a href="#">6890</a></li>
                             <li><span class="title">Product Type:</span> <a href="#">Women</a></li>
                             <li><span class="title">Product ID:</span> <a href="#">346</a></li>
                             <li><span class="title">Availability:</span> <a href="#">6 In Stock</a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
             </div>
