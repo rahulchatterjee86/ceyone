@@ -44,11 +44,11 @@
                             <h4>{{ $single_product_details['post_title'] }}</h4>
                             {{-- <div class="text">ST London’s Sensual Lips is an ultra-long lasting and smudge proof liquid lip color that keeps the lips nourished and smooth.</div> --}}
                             <div class="item-price">
+                                
                                 @if( get_product_type($single_product_details['id']) == 'simple_product' || (get_product_type($single_product_details['id']) == 'downloadable_product' && count(get_product_variations($single_product_details['id'])) == 0 ) || (get_product_type($single_product_details['id']) == 'customizable_product' && count(get_product_variations($single_product_details['id'])) == 0 ) )
                                     @if(!is_null($single_product_details['offer_price']))
                                         <span class="offer-price">{!! price_html( $single_product_details['offer_price'] ) !!}</span>
                                     @endif
-
                                     <span class="solid-price">{!! price_html( $single_product_details['solid_price'] ) !!}</span>
 
                                     @if($single_product_details['post_regular_price'] && $single_product_details['post_sale_price'] && $single_product_details['post_regular_price'] > $single_product_details['post_sale_price'] && $single_product_details['_product_sale_price_start_date'] && $single_product_details['_product_sale_price_end_date'] && $single_product_details['_product_sale_price_end_date'] >= date("Y-m-d"))
@@ -112,8 +112,7 @@
 
                         <div class="btns-box">
                             <button type="button" class="theme-btn btn-style-one add-to-cart add-to-cart-bg" data-id="{{ $single_product_details['id'] }}"><span class="flaticon-shopping-cart"></span> Add To Cart</button>
-                            <button type="button" class="theme-btn btn-style-one"><span class="flaticon-heart"></span></button>
-                            <button type="button" class="theme-btn btn-style-one"><span class="flaticon-compare"></span></button>
+                            <button type="button" class="theme-btn btn-style-one product-wishlist" data-id="{{ $single_product_details['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="flaticon-heart"></span></button>
                         </div>
 
                         <ul class="product-meta">
@@ -263,7 +262,7 @@
                                     @endif
                                     <div class="overlay-box">
                                         <div class="btn-box">
-                                            <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
+                                            <a href="" class="product-wishlist" data-id="{{ $products['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
                                             <a data-id="{{ $products['id'] }}" href="" class="add-to-cart-bg"><span class="icon flaticon-shopping-cart"></span></a>
                                             {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                         </div>

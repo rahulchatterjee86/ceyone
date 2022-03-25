@@ -110,7 +110,7 @@
                             @endif
                             <div class="overlay-box">
                                 <div class="btn-box">
-                                    <a href="#"><span class="icon flaticon-heart"></span></a>
+                                    <a href="" class="product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
                                     <a href="#" class="add-to-cart-bg" data-id="{{ $features_product->id }}" ><span class="icon flaticon-shopping-cart"></span></a>
                                     {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                 </div>
@@ -317,14 +317,12 @@
                     @foreach($advancedData['categories'] as $key => $category)
                     <li class="filter" data-role="button" data-filter=".{{ $category->slug }}">{{ $category->name }}</li>
                     @endforeach
-                    {{-- <li class="filter" data-role="button" data-filter=".baby-prod">Baby Products</li>
-                    <li class="filter" data-role="button" data-filter=".bath-prep">Bath Preparations</li>
-                    <li class="filter" data-role="button" data-filter=".eye-makeup">Eye Makeup</li>
-                    <li class="filter" data-role="button" data-filter=".fragrance">Fragrance</li>
-                    <li class="filter" data-role="button" data-filter=".hair-prep">Hair Preparations</li> --}}
+                    {{-- <li class="filter" data-role="button" data-filter=".recommended_items">Recommended for you</li>
+                    <li class="filter" data-role="button" data-filter=".features_items">Featured Products</li>
+                    <li class="filter" data-role="button" data-filter=".best_sales">Best Sales</li>
+                    <li class="filter" data-role="button" data-filter=".todays_deal">Todays Deal</li> --}}
                 </ul>
             </div>
-                                                                            
             <div class="filter-list row">
                 @foreach($advancedData['latest_items'] as $key => $features_product)
                 <!-- Product Block --> 
@@ -338,7 +336,8 @@
                             @endif
                             <div class="overlay-box">
                                 <div class="btn-box">
-                                    <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
+                                    <a href="" class="product-wishlist" data-id="{{ $features_product->id }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
+                                    
                                     <a href="" data-id="{{ $features_product->id }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><span class="icon flaticon-shopping-cart"></span></a>
                                     {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                 </div>

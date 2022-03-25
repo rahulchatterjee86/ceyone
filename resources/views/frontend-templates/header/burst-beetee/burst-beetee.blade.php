@@ -171,8 +171,7 @@
                 <ul class="options-list">
                     <li><button class="search-btn"><span class="icon flaticon-loupe"></span></button></li>
                     <li><a href="{{ route('user-account-page') }}"><span class="icon flaticon-user-1"></span></a></li>
-{{--                 <li><a href="#"><span class="icon flaticon-compare"></span></a></li>
---}}                 <li><a href="#"><span class="icon flaticon-heart"></span></a></li>
+                   <li><a href="{{url("/user/account/my-saved-items")}}"><span class="icon flaticon-heart"></span></a></li>
                     <li class="cart-icon"><button type="button" class="cart-btn"><span class="cart-number">{{ Cart::count() }}</span><span class="icon flaticon-shopping-cart"></span></button></li>
                 </ul>
             </div>

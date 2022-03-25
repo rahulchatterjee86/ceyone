@@ -96,6 +96,7 @@
             <!--Content Side-->
             <div class="content-side col-xl-9 col-lg-8 col-md-12 col-sm-12 order-2">
                 <div class="row">
+                    {{dd($product_by_cat_id)}}
                     @foreach($product_by_cat_id['products'] as $products)
                     <!-- Product Block --> 
                     <div class="product-block col-lg-4 col-md-6 col-sm-12">
@@ -108,7 +109,8 @@
                                 @endif
                                 <div class="overlay-box">
                                     <div class="btn-box">
-                                        <a href="wishlist.html"><span class="icon flaticon-heart"></span></a>
+                                        <a href="" class="product-wishlist" data-id="{{ $products['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="icon flaticon-heart"></span></a>
+
                                         <a href="" data-id="{{ $products['id'] }}" class="btn btn-sm btn-style add-to-cart-bg" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_cart_label') }}"><span class="icon flaticon-shopping-cart"></span></a>
                                         {{-- <a href="shop-single.html"><span class="icon flaticon-paper-clip"></span></a> --}}
                                     </div>
