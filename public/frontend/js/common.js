@@ -152,7 +152,8 @@ $(document).ready(function(){
     })
   }
   
-  if($('#product-category #price_range').length>0){
+  // if($('#product-category #price_range').length>0){
+  if(1){
     $('#product-category #price_range') .slider()
       .on('slideStop', function(ev){
         $('#price_min').val(ev.value[0]);
@@ -826,7 +827,8 @@ shopist_frontend.init =
       shopist_frontend.event.shipping_method_dropdown_option();
     }
     
-    if($('#product-category').length>0){
+    // if($('#product-category').length>0){
+    if(1){
       $(".sort-by-filter").select2();
       
       $('.sort-by-filter').select2().on('change', function() {

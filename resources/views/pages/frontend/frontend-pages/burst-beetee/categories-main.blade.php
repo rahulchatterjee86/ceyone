@@ -16,37 +16,14 @@
 <!--End Page Title-->
 
 <!-- Sidebar Page Container -->
-<div class="sidebar-page-container">
+<div id="product-category" class="sidebar-page-container">
     <div class="auto-container">
         <div class="shop-upper-box">
             <div class="items-label">Showing Result of “{{ count($product_by_cat_id['products']) }}” Products</div>
             <div class="sort-by">
-                {{-- <select class="custom-select-box" id="grid-view">
-                    <option>3 Column</option>
-                    <option>4 column</option>
-                    <option>List view</option>
-                    <option>Grid view</option>
-                </select> --}}
-
-                {{-- <select class="custom-select-box" id="latest-item">
-                    <option>Latest Items</option>
-                    <option>Oldest Items</option>
-                    <option>Price Lowest</option>
-                    <option>Price Highest</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
-                </select> --}}
-
-                {{-- <select class="custom-select-box" id="sort-by-price">
-                    <option>Sort by Price</option>
-                    <option>Price: Lowest First</option>
-                    <option>Price: Highest First</option>
-                    <option>Ascending</option>
-                    <option>Descending</option>
-                </select> --}}
 
                 <span>{{ trans('frontend.sort_filter_label') }} </span>
-                <select class="select2 sort-by-filter custom-select-box" style="width: 50%;">
+                <select class="form-control select2 sort-by-filter">
                     @if($product_by_cat_id['sort_by'] == 'all')
                         <option selected="selected" value="all">{{ trans('frontend.sort_filter_all_label') }}</option>
                     @else

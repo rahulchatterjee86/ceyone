@@ -12,14 +12,14 @@
 <!--End Page Title-->
 
 <!-- Sidebar Page Container -->
-<div class="sidebar-page-container">
+<div id="product-category" class="sidebar-page-container">
     <div class="auto-container">
         <div class="shop-upper-box">
             <div class="items-label">Showing Result of “{{ count($all_products_details['products']) }}” Products</div>
             <div class="sort-by">
 
                 <span>{{ trans('frontend.sort_filter_label') }} </span>
-                <select class="form-control select2 sort-by-filter" style="width: 50%;">
+                <select class="form-control select2 sort-by-filter">
                     @if($all_products_details['sort_by'] == 'all')
                         <option selected="selected" value="all">{{ trans('frontend.sort_filter_all_label') }}</option>
                     @else

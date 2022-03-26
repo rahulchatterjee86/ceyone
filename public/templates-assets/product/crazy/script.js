@@ -6,7 +6,8 @@ $(document).ready(function(){
     })
   }
   
-  if($('#shop_page #price_range').length>0){
+  // if($('#shop_page #price_range').length>0){
+  if(1){
     $('#shop_page #price_range').slider();
   }
   
@@ -85,7 +86,8 @@ $(document).ready(function(){
       }
   });
   
-  if($('#shop_page #price_range').length>0){
+  // if($('#shop_page #price_range').length>0){
+  if(1){
     $('#shop_page #price_range') .slider()
       .on('slideStop', function(ev){
         $('#price_min').val(ev.value[0]);
