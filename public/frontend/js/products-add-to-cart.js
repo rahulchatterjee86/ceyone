@@ -87,7 +87,10 @@ var dynamicAddToCart= function(){
             swal("" , 'May be you try with over quantity!' );
           }
           else if(data && data == 'item_added'){
+
+            window.location.href = window.location.origin + window.location.pathname + '?showcart=1'
      
+            /*
             var get_mini_cart_id = $('.show-mini-cart').data('id');
             $.ajax({
                 url: $('#hf_base_url').val() + '/ajax/get-mini-cart-data',
@@ -158,6 +161,7 @@ var dynamicAddToCart= function(){
                     window.location.reload();
                 }
             });
+            */
           }
         },
         error:function(){
