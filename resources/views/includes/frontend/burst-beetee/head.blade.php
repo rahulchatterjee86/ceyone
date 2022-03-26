@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="{{ URL::asset('public/frontend/css/common.css') }}" />
 <link rel="stylesheet" href="{{ URL::asset('public/frontend/css/price-range.css') }}" />
 <link rel="stylesheet" href="{{ URL::asset('public/plugins/iCheck/square/purple.css') }}" />
+<link rel="stylesheet" href="{{ URL::asset('public/sweetalert/sweetalert.css') }}" />
 
 <script type="text/javascript" src="{{ URL::asset('public/burst-beetee/js/jquery.js') }}"></script> 
 <script type="text/javascript" src="{{ URL::asset('public/frontend/js/jquery.scrollUp.min.js') }}"></script>
@@ -21,6 +22,7 @@
 <script type="text/javascript" src="{{ URL::asset('public/plugins/iCheck/icheck.min.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('public/plugins/bootstrap-slider/bootstrap-slider.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('public/designer/scroll/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('public/sweetalert/sweetalert.min.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('public/frontend/js/common.js') }}"></script>
 
 <!-- Responsive -->

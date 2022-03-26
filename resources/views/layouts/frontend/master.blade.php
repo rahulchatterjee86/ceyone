@@ -34,6 +34,8 @@
         <input type="hidden" name="hf_base_url" id="hf_base_url" value="{{ url('/') }}">
         <input type="hidden" name="cart_url" id="cart_url" value="{{ route('cart-page') }}">
         <input type="hidden" name="currency_symbol" id="currency_symbol" value="{{ $_currency_symbol }}">
+        <input type="hidden" name="lang_code" id="lang_code" value="{{ $selected_lang_code }}">  
+        <input type="hidden" name="subscription_type" id="subscription_type" value="{{ $subscriptions_data['subscribe_type'] }}">
 
     </div><!-- Page Wrapper -->
 

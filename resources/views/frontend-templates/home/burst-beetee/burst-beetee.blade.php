@@ -117,7 +117,7 @@
                             </div>
                         </div>
                         <div class="lower-content clearfix">
-                            <h4 class="name"><a href="shop-single.html">{!! $features_product->title !!}</a></h4>
+                            <h4 class="name"><a href="{{ route('details-page', $features_product->slug) }}">{!! $features_product->title !!}</a></h4>
                             <span class="price"><del>${{ $features_product->regular_price }}</del> ${{ $features_product->price }}</span>
                         </div>
                     </div>
