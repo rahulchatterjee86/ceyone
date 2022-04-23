@@ -2569,6 +2569,7 @@ form .response .text-info{
 ***/
 
 .sec-title{
+  margin-top: 80px;
   position: relative;
   margin-bottom: 40px;
 }
@@ -2635,7 +2636,7 @@ form .response .text-info{
 
 .banner-section .slide-item{
   position: relative;
-  height: 750px;
+  height: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4066,7 +4067,7 @@ a.ui-button:active, .ui-button:active,
 
 .products-section-two{
   position: relative;
-  padding: 80px 0 50px;
+  padding: 10px 0 50px;
 }
 .products-section-two.alternate {
     padding: 38px 0 40px;
@@ -5496,7 +5497,7 @@ a.ui-button:active, .ui-button:active,
   padding: 40px 35px 50px;
 }
 
-.hot-product:before{
+/* .hot-product:before{
   position: absolute;
   left: 200px;
   top: 0;
@@ -5510,7 +5511,7 @@ a.ui-button:active, .ui-button:active,
   font-weight:600;
   font-family: "Josefin Sans", sans-serif; 
   opacity: .04;
-}
+} */
 
 .hot-product .title{
   display: block;
@@ -6422,7 +6423,7 @@ a.ui-button:active, .ui-button:active,
 
 .news-section{
   position: relative;
-  padding: 80px 0 0;
+  padding: 10px 0 0;
 }
 .related-news{
 	padding: 25px 0 20px;
@@ -7400,7 +7401,7 @@ blockquote cite{
 
 .testimonial-section{
   position: relative;
-  padding: 50px 0 80px;
+  padding: 10px 0 00px;
 }
 
 .testimonial-carousel{
@@ -7412,7 +7413,7 @@ blockquote cite{
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  padding-left: 180px;
+  /*padding-left: 180px;*/
   padding-top: 40px;
 }
 

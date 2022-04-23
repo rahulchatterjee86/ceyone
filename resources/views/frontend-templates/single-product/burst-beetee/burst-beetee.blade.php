@@ -105,7 +105,7 @@
                                 <li class="active">Rosemary</li>
                                 <li>Jasmine</li>
                             </ul>
-                        </div>
+                        </div> --}}
 
                         <!-- Quantity Option -->
                         <div class="quantity-options">
@@ -113,21 +113,16 @@
                             <input type="hidden" id="affiliation_id" value="{{$affiliation_id??''}}" >
                             <input type="hidden" name="available_stock_val" id="available_stock_val" value="{{ $single_product_details['post_stock_qty'] }}">
                             <input type="hidden" name="backorder_val" id="backorder_val" value="{{ $single_product_details['_product_manage_stock_back_to_order'] }}">
-                        </div> --}}
+                        </div>
 
                         <div class="btns-box">
                             <button type="button" class="theme-btn btn-style-one add-to-cart add-to-cart-bg" data-id="{{ $single_product_details['id'] }}"><span class="flaticon-shopping-cart"></span> Add To Cart</button>
                             <button type="button" class="theme-btn btn-style-one product-wishlist" data-id="{{ $single_product_details['id'] }}" data-toggle="tooltip" data-placement="top" title="{{ trans('frontend.add_to_wishlist_label') }}"><span class="flaticon-heart"></span></button>
                         </div>
 
-                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
+                       
                         <ul class="product-meta">
-                            <li><span class="title">Brand:</span> <a href="#">Bottled Heaven</a></li>
-                            <li><span class="title">SKU:</span> <a href="#">6890</a></li>
-                            <li><span class="title">Product Type:</span> <a href="#">Women</a></li>
-                            <li><span class="title">Product ID:</span> <a href="#">346</a></li>
-                            <li><span class="title">Availability:</span> <a href="#">6 In Stock</a></li>
+                            <li>6 In Stock</li>
                         </ul>
                     </div>
                 </div>

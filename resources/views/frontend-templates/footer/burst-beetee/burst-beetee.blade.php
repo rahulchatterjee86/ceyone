@@ -62,14 +62,6 @@
                                 <li>Email at: <a href="mailto:info@ceyone.co.in">info@ceyone.co.in</a></li>
                                 <li>Land No: <a href="tel:033 40631211">033 40631211</a></li>
                             </ul>
-
-                            <ul class="payments">
-                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/shopify.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/skrill.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/electron.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/sage.jpg') }}" alt=""></a></li>
-                                <li><a href="#"><img src="{{ URL::asset('public/burst-beetee/images/icons/amazon.jpg') }}" alt=""></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
