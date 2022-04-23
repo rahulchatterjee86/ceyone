@@ -2411,7 +2411,7 @@ form .response .text-info{
 
 .page-title{
   position:relative;
-  padding: 60px 0;
+  padding: 0px 0;
   background-size:cover;
   background-position:center center;
   background-repeat:no-repeat;
@@ -2421,9 +2421,9 @@ form .response .text-info{
 .page-title .content-box{
   position: relative;
   padding: 30px 20px;
-  min-height: 200px;
+  min-height: 100px;
   max-width: 650px;
-  border: 10px solid rgba(240,147,124,.25);
+/*  border: 10px solid rgba(240,147,124,.25 ); */
   margin: 0 auto;
   text-align: center;
   display: flex;

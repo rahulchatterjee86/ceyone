@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="dropdown"><a href="blog.html">About</a>
+                        <li class="dropdown"><a href="javascript:;">About</a>
                             <ul>
                                 <li><a href="{{ url("/page/about") }}">Company Profile</a></li>
                                 <li><a href="{{ url("/page/vision-mission") }}">Vision and Mission</a></li>
