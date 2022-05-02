@@ -251,8 +251,10 @@
                     </div>
                                                    
                     <div class="row">
+                        <?php $related_items1 = array_slice($related_items, 0, 4) ?>
+
                         
-                        @foreach($related_items as $products)
+                        @foreach($related_items1 as $products)
                         <!-- Product Block --> 
                         <div class="product-block col-lg-3 col-md-6 col-sm-12">
                             <div class="inner-box">

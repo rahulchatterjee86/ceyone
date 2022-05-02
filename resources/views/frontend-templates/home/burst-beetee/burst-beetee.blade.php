@@ -90,23 +90,23 @@
     <div class="auto-container">
         <div class="banners-area row">
             <!-- Banner Box -->
-            <div class="banner-box col-lg-8 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/oral-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-1.png') }}" alt=""></a></figure>
+            <div class="banner-box col-lg-3 col-md-6 col-sm-6">
+                <figure class="banner-img"><a href="{{ URL("/product/categories/oral-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
-            <div class="banner-box col-lg-4 col-md-12 col-sm-12">
+            <div class="banner-box col-lg-3 col-md-6 col-sm-6">
                 <figure class="banner-img"><a href="{{ URL("/product/categories/personal-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
-            <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/health-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-3.png') }}" alt=""></a></figure>
+            <div class="banner-box col-lg-3 col-md-6 col-sm-6">
+                <figure class="banner-img"><a href="{{ URL("/product/categories/health-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
-            <div class="banner-box col-lg-6 col-md-12 col-sm-12">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/agri-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-4.png') }}" alt=""></a></figure>
+            <div class="banner-box col-lg-3 col-md-6 col-sm-6">
+                <figure class="banner-img"><a href="{{ URL("/product/categories/agri-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
             </div>
         </div>
 
