@@ -1,4 +1,4 @@
-<!-- instagram Feed -->
+{{-- <!-- instagram Feed -->
 <section class="instagram-feed">
     <div class="auto-container">
         <div class="sec-title text-center">
@@ -29,4 +29,4 @@
         </ul>
     </div>
 </section>
-<!--End instagram Feed -->
+<!--End instagram Feed --> --}}

@@ -188,7 +188,7 @@ p,.text{
   min-width:300px;
   overflow: hidden;
   z-index: 99;
-  background-color: #fff9f6;
+  background-color: #e4e9fc;
 }
 
 ul,li{
@@ -732,7 +732,7 @@ ul,li{
   height: 60px;
   font-size: 28px;
   color: #ffffff;
-  background-color: #c20000;
+  background-color: #00aeef;
   line-height: 60px;
   text-align: center;
   display: none;
@@ -817,7 +817,7 @@ img{
   height: 50px;
   font-weight: 600;
   background: none;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   font-family: "Josefin Sans", sans-serif;
   background-color: transparent;
   -webkit-transition: all 300ms ease;
@@ -1011,7 +1011,7 @@ form .response .text-info{
   height: 15px;
   cursor: pointer;
   background-color: #ffffff;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   border-radius: 4px;
   box-sizing: border-box;
   -webkit-transition: all 0.25s;
@@ -2244,7 +2244,7 @@ form .response .text-info{
 .sidebar-cart .shopping-cart .cart-item .thumb{
   width: 75px;
   height: 74px;
-  background-color: #fedbd2;
+  background-color: #94b2ed;
 }
 
 .sidebar-cart .shopping-cart .theme-btn{
@@ -2416,6 +2416,16 @@ form .response .text-info{
   background-position:center center;
   background-repeat:no-repeat;
   z-index: 9;
+}
+
+.home-feature-icons{
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.home-blocks-icons{
+  width: 15%;
+  margin-bottom: 20px;
 }
 
 .page-title .content-box{
@@ -3442,7 +3452,7 @@ form .response .text-info{
 }
 
 .services-section.style-two .outer-box{
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
   box-shadow: none;
 }
 
@@ -3690,7 +3700,7 @@ form .response .text-info{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   padding: 0 20px 5px;
   margin-bottom: 30px;
 }
@@ -3816,7 +3826,7 @@ a.ui-button:active, .ui-button:active,
 .product-block .image-box{
   position: relative;
   overflow: hidden;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
 }
 
 .product-block .image-box .image{
@@ -4638,7 +4648,7 @@ a.ui-button:active, .ui-button:active,
 .cart-table .cart-header{
   position:relative;
   width:100%;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .cart-table thead tr th{
@@ -4657,12 +4667,12 @@ a.ui-button:active, .ui-button:active,
 
 .cart-table tbody{
   position: relative;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .cart-table tbody tr{
   position: relative;
-  border-bottom: 2px solid #fedbd2;
+  border-bottom: 2px solid #94b2ed;
 }
 
 .cart-table tbody tr td{
@@ -4699,7 +4709,7 @@ a.ui-button:active, .ui-button:active,
   top: 0;
   height: 50px;
   width: 50px;
-  background-color: #fedbd2;
+  background-color: #94b2ed;
 }
 
 .cart-table .column-box .prod-title{
@@ -4741,7 +4751,7 @@ a.ui-button:active, .ui-button:active,
 .cart-section .cart-totals{
   position: relative;
   padding-top: 25px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   border-top: 0;
 }
 
@@ -4754,7 +4764,7 @@ a.ui-button:active, .ui-button:active,
 .cart-section .cart-totals .btn-box{
   position: relative;
   flex: 0 0 100%;
-  border-top: 2px solid #fedbd2;
+  border-top: 2px solid #94b2ed;
   padding-top: 20px;
   padding-left: 40px;
   padding-bottom: 20px;
@@ -4832,7 +4842,7 @@ a.ui-button:active, .ui-button:active,
 
 .cart-section .totals-table .total.final{
   padding-top: 30px;
-  border-top: 2px solid #fedbd2;
+  border-top: 2px solid #94b2ed;
   margin-top: 5px;
   margin-bottom: 30px;
 }
@@ -5009,7 +5019,7 @@ a.ui-button:active, .ui-button:active,
   left: 0;
   top: 24px;
   width: 100%;
-  border-bottom: 2px solid #fedbd2;
+  border-bottom: 2px solid #94b2ed;
   content: "";
 }
 
@@ -5031,7 +5041,7 @@ a.ui-button:active, .ui-button:active,
   align-items: center;
   background-color: #fff9f6;
   color: #000000;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   font-weight: 600;
 }
 
@@ -5066,7 +5076,7 @@ a.ui-button:active, .ui-button:active,
 .checkout-form .form-ouer{
   position: relative;
   padding: 30px 30px 30px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .checkout-form.default-form h4{
@@ -5117,7 +5127,7 @@ a.ui-button:active, .ui-button:active,
 .order-box{
   position: relative;
   padding: 20px 20px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -5130,7 +5140,7 @@ a.ui-button:active, .ui-button:active,
   padding-left: 55px;
   min-height: 65px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #fedbd2;
+  border-bottom: 2px solid #94b2ed;
   margin-bottom: 20px;
   padding-right: 80px;
 }
@@ -5228,7 +5238,7 @@ a.ui-button:active, .ui-button:active,
 
 .order-box .totals-table .total.final{
   padding-top: 20px;
-  border-top: 2px solid #fedbd2;
+  border-top: 2px solid #94b2ed;
   margin-top: 11px;
   margin-bottom: 0;
 }
@@ -5245,7 +5255,7 @@ a.ui-button:active, .ui-button:active,
 
 .shipping-info-box{
   position: relative;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   padding: 0 18px;
   margin-bottom: 30px;
   font-family: "Josefin Sans";
@@ -5259,7 +5269,7 @@ a.ui-button:active, .ui-button:active,
   line-height: 30px;
   color: #000000;
   padding: 8px 0;
-  border-top: 2px solid #fedbd2;
+  border-top: 2px solid #94b2ed;
 }
 
 .shipping-info-box li:first-child{
@@ -5293,7 +5303,7 @@ a.ui-button:active, .ui-button:active,
   position: relative;
   margin-top: 15px;
   padding: 11px 18px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -5343,7 +5353,7 @@ a.ui-button:active, .ui-button:active,
   height: 15px;
   cursor: pointer;
   background-color: #ffffff;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   border-radius: 4px;
   box-sizing: border-box;
   -webkit-transition: all 0.25s;
@@ -5493,7 +5503,7 @@ a.ui-button:active, .ui-button:active,
 
 .hot-product{
   position: relative;
-  background-color: #fedbd2;
+  background-color: #94b2ed;
   padding: 40px 35px 50px;
 }
 
@@ -5721,7 +5731,7 @@ a.ui-button:active, .ui-button:active,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #fff2ef;
+  /* background-color: #fff2ef; */
   transition: all 500ms ease;
 }
 
@@ -6239,7 +6249,7 @@ a.ui-button:active, .ui-button:active,
   position: relative;
   margin-bottom: 0;
   padding: 17px;
-  border: 3px solid #fedbd2;
+  border: 3px solid #94b2ed;
 }
 
 .team-detail .basic-detail .image img{
@@ -6332,7 +6342,7 @@ a.ui-button:active, .ui-button:active,
 .team-detail .appointment-box{
   position: relative;
   padding: 20px 30px 30px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .skills{
@@ -6445,14 +6455,14 @@ a.ui-button:active, .ui-button:active,
   top: 0;
   height: 100%;
   width: 100%;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
   content: "";
   transition: all 300ms ease;
 }
 
 
 .news-block .inner-box:hover:before{
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .news-block .image-box{
@@ -6856,7 +6866,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .blog .news-block .inner-box{
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 /*** 
@@ -7054,7 +7064,7 @@ blockquote cite{
   display: block;
   padding: 16px 30px;
   min-height: 120px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   margin-bottom: 10px;
   padding-right: 120px;
   transition: all 300ms ease;
@@ -7162,7 +7172,7 @@ blockquote cite{
   position:relative;
   padding: 30px 30px;
   padding-left: 130px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   margin-bottom: 30px;
 }
 
@@ -7241,7 +7251,7 @@ blockquote cite{
 .comments-area .comment-box.reply-comment{
   box-shadow: none;
   border: 0;
-  border-top: 2px solid #fedbd2;
+  border-top: 2px solid #94b2ed;
   margin-top: 20px;
   margin-bottom: 0;
   padding-left: 100px;
@@ -7263,7 +7273,7 @@ blockquote cite{
 .comment-form .form-outer{
   position: relative;
   padding: 30px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .comment-form .form-group textarea {
@@ -7481,7 +7491,7 @@ blockquote cite{
   position: relative;
   text-align: left;
   padding: 80px 50px 20px 100px;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
 }
 
 .testimonial-block .text-box .icon{
@@ -7567,7 +7577,7 @@ blockquote cite{
 
 .newslatters{
   position: relative;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
   padding: 25px 25px 20px;
   margin-top: 40px;
 }
@@ -7614,7 +7624,7 @@ blockquote cite{
   padding:10px 15px;
   height:40px;
   width:100%;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   background-color: transparent;
   -webkit-transition:all 500ms ease;
   -moz-transition:all 500ms ease;
@@ -7671,7 +7681,7 @@ blockquote cite{
 .dashboard-tabs .tab-buttons{
   position: relative;
   text-align: center;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   padding: 0 30px;
 }
 
@@ -7683,7 +7693,7 @@ blockquote cite{
   padding: 14px 30px;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
-  border-bottom: 2px solid #fedbd2;
+  border-bottom: 2px solid #94b2ed;
   cursor: pointer;
   transition: all 300ms ease;
 }
@@ -7707,7 +7717,7 @@ blockquote cite{
 .dashboard-section .tabs-content .tab-inner{
   position: relative;
   padding: 25px 25px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   min-height: 100%;
 }
 
@@ -8087,11 +8097,11 @@ blockquote cite{
 .pricing-section.style-two .pricing-block .inner-box{
   background: none;
   box-shadow: none;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
 }
 
 .pricing-section.style-two .pricing-block.tagged .inner-box{
-  border: 3px solid #fedbd2;
+  border: 3px solid #94b2ed;
   padding: 30px 25px 45px;
   margin-top: -10px;
   margin-bottom: -10px;
@@ -8102,7 +8112,7 @@ blockquote cite{
 }
 
 .pricing-section.style-two .pricing-block .info-box:before{
-  background-color: #fedbd2;
+  background-color: #94b2ed;
 }
 
 .pricing-section.style-two .pricing-block .features{
@@ -8139,14 +8149,14 @@ blockquote cite{
   position: relative;
   text-align: center;
   padding: 50px 20px 30px;
-  border: 5px solid #fedbd2;
+  border: 5px solid #94b2ed;
   transition: all 300ms ease;
 }
 
 .pricing-block-two.tagged .inner-box{
   padding-top: 65px;
   padding-bottom: 40px;
-  border: 3px solid #fedbd2;
+  border: 3px solid #94b2ed;
   margin-top: -10px;
 }
 
@@ -8618,8 +8628,7 @@ blockquote cite{
   background-color: #ffe2db;
   background-image: url(../images/background/2.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 /*=== Widgets Section ===*/
@@ -8674,7 +8683,7 @@ blockquote cite{
   height: 50px;
   width: 50px;
   line-height: 48px;
-  background-color: #ffe2db;
+  background-color: #d1ddf5;
   border: 2px solid #000000;
   text-align: center;
   transition: all 300ms ease;
@@ -8875,7 +8884,7 @@ blockquote cite{
 .sidebar-page-container .sidebar{
   position: relative;
   padding: 30px 20px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
 }
 
 .sidebar-page-container .content-side,
@@ -8898,7 +8907,7 @@ blockquote cite{
 
 .sidebar-title{
   position: relative;
-  border-bottom: 2px solid #fedbd2;
+  border-bottom: 2px solid #94b2ed;
   padding-bottom: 15px;
   margin-bottom: 20px;
 }
@@ -8924,7 +8933,7 @@ blockquote cite{
 .sidebar .search-box .form-group input[type="search"]{
   position:relative;
   padding:8px 15px;
-  border: 2px solid #fedbd2;
+  border: 2px solid #94b2ed;
   background-color: transparent;
   display:block;
   font-size:14px;
@@ -8989,7 +8998,7 @@ blockquote cite{
   left: 0;
   top: 0;
   width: 70px;
-  background-color: #fedbd2;
+  background-color: #94b2ed;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;

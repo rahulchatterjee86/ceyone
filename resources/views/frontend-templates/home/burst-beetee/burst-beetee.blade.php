@@ -1,8 +1,10 @@
 <!-- Banner Section -->
 <section class="banner-section">
-    <div class="banner-carousel owl-carousel owl-theme">
+{{--     <div class="banner-carousel owl-carousel owl-theme">
+ --}}    <div class="auto-container">
+        <img src="{{ URL::asset('public/burst-beetee/images/ceyone/hairshampoo_serum.jpg') }}" width="100%">
         <!-- Slide Item -->
-        <div class="slide-item style-one">
+        {{-- <div class="slide-item style-one">
             <div class="auto-container">
                 <div class="image-outer"><div class="banner-image" style="background-image: url({{ URL::asset('public/burst-beetee/images/main-slider/1.png') }});"></div></div>
                 <div class="content-box">
@@ -36,7 +38,7 @@
                     <a href="{{url ("/product/categories/personal-care")}}" class="theme-btn icon-btn-one"><span>Read More</span></a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
 <!--END Banner Section -->
@@ -48,7 +50,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
-                    <span class="icon flaticon-air-freight"></span>
+                    <img src="{{ URL::asset('public/burst-beetee/images/ceyone/icons1-01.png') }}" class="home-feature-icons">
                     <h4><a href="javascript:;">NATIONWIDE SERVICE</a></h4>
                     <p>The ultimate care</p>
                 </div>
@@ -57,7 +59,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
-                    <span class="icon flaticon-support-2"></span>
+                    <img src="{{ URL::asset('public/burst-beetee/images/ceyone/icons2-01.png') }}" class="home-feature-icons">                    
                     <h4><a href="javascript:;">24/7 HELP CENTRE</a></h4>
                     <p>At your Service</p>
                 </div>
@@ -66,7 +68,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
-                    <span class="icon flaticon-reload-1"></span>
+                    <img src="{{ URL::asset('public/burst-beetee/images/ceyone/icons3-01.png') }}" class="home-feature-icons">                    
                     <h4><a href="javascript:;">SAFE PAYMENT</a></h4>
                     <p>Make hassle free Payment</p>
                 </div>
@@ -75,7 +77,7 @@
             <!-- Feature Block -->
             <div class="feature-block col-lg-3 col-md-6 col-sm-12">
                 <div class="inner-box">
-                    <span class="icon flaticon-gift"></span>
+                    <img src="{{ URL::asset('public/burst-beetee/images/ceyone/icons4-01.png') }}" class="home-feature-icons">                    
                     <h4><a href="javascript:;">QUICK DELIVERY</a></h4>
                     <p>Get at your doorstep</p>
                 </div>
@@ -91,22 +93,22 @@
         <div class="banners-area row">
             <!-- Banner Box -->
             <div class="banner-box col-lg-3 col-md-6 col-sm-6">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/oral-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/oral-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/categories.jpg') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-3 col-md-6 col-sm-6">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/personal-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/personal-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/categories2.jpg') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-3 col-md-6 col-sm-6">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/health-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/health-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/categories3.jpg') }}" alt=""></a></figure>
             </div>
 
             <!-- Banner Box -->
             <div class="banner-box col-lg-3 col-md-6 col-sm-6">
-                <figure class="banner-img"><a href="{{ URL("/product/categories/agri-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/resource/banner-2.png') }}" alt=""></a></figure>
+                <figure class="banner-img"><a href="{{ URL("/product/categories/agri-care") }}"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/categories4.jpg') }}" alt=""></a></figure>
             </div>
         </div>
 
@@ -174,37 +176,31 @@
                     
                     <!-- Feature Block -->
                     <div class="feature-block-two">
-                        <span class="icon flaticon-tea"></span>
-                        <h4>Natural Extracts</h4>
+                        <img src="{{ URL::asset('public/burst-beetee/images/ceyone/facewash_icons1-01.png') }}" class="home-blocks-icons    ">                        <h4>Natural Extracts</h4>
                         <div class="text">Natural colors, functionality and nutritional substances.</div>
                     </div>
 
                     <!-- Feature Block -->
                     <div class="feature-block-two">
-                        <span class="icon flaticon-security"></span>
-                        <h4>Quality Assurance</h4>
+                        <img src="{{ URL::asset('public/burst-beetee/images/ceyone/facewash_icons2-01.png') }}" class="home-blocks-icons">                        <h4>Quality Assurance</h4>
                         <div class="text">Each product are certified by our quality control.</div>
                     </div>
 
                     <!-- Feature Block -->
                     <div class="feature-block-two">
-                        <span class="icon flaticon-matcha"></span>
-                        <h4>Perfect Blend</h4>
+                        <img src="{{ URL::asset('public/burst-beetee/images/ceyone/facewash_icons3-01.png') }}" class="home-blocks-icons">                        <h4>Perfect Blend</h4>
                         <div class="text">Natural Aloe Vera, honey, papaya, pulp, argan oil..</div>
                     </div>
                 </div>
             </div>
 
             <div class="product-column col-lg-6 col-md-12 col-sm-12">
-                <div class="inner-column">
-                    <div class="hot-product">
-                        <h3 class="title">Hot Product</h3>
+                <div class="1">
                         <div class="content">
                             <div class="image-box">
-                                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/hot-product.png') }}" alt=""></figure>
+                                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/face_wash_4.jpg') }}" alt=""></figure>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -219,13 +215,13 @@
 <!-- Fluid Sectin -->
 <section class="fluid-section">
     <div class="row no-gutters">
-        <div class="left-column col-lg-6 col-md-12">
+        <div class="left-column col-lg-6 col-md-12" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/always21_bg.jpg') }});background-size:cover;">
             <!-- Image Column -->
-            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-1.jpg') }});">
-                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/image-1.jpg') }}" alt=""></figure>
+            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/toothpaste.jpg') }});">
+                <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/ceyone/always21_bg.jpg') }}" alt=""></figure>
             </div>
 
-            <div class="content-box">
+            <div class="content-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/always21_bg.jpg') }});">
                 <div class="inner-box">
                     <div class="sec-title">
                         <h2>Look more Beautiful <br><span>Personal Care</span><br> With Ceyoune</h2>
@@ -236,8 +232,8 @@
             </div>
         </div>
 
-        <div class="right-column col-lg-6 col-md-12">
-            <div class="content-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-2.jpg') }});">
+        <div class="right-column col-lg-6 col-md-12" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/toothpaste_content_bg.jpg') }});background-size:cover;">
+            <div class="content-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/toothpaste_contentd.jpg') }}); ">
                 <div class="inner-box">
                     <div class="sec-title">
                         <h2>Stay Healthy With<br><span>Agri Care</span><br> Organic products</h2>
@@ -247,7 +243,7 @@
                 </div>
             </div>
             <!-- Image Column -->
-            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/resource/image-1-1.jpg') }});">
+            <div class="image-box" style="background-image: url({{ URL::asset('public/burst-beetee/images/ceyone/always21.jpg') }});">
                 <figure class="image"><img src="{{ URL::asset('public/burst-beetee/images/resource/image-1-1.jpg') }}" alt=""></figure>
             </div>
 
